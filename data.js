@@ -166,17 +166,24 @@ const DAYS = [
         gmaps: gm("Times Square, New York")
       },
       {
-        name: "M Social Hotel — Beast & Butterflies (rooftop)",
+        name: "M Social Hotel — Beast & Butterflies (rooftop, заскочити на 20-30 хв)",
         coords: [40.7645, -73.9847],
-        desc: "Дах-бар з видом прямо на Times Square — гарне місце для вечірнього коктейлю.",
+        desc: "Дах-бар з видом прямо на Times Square — зайти лише подивитись краєвид, без розсідання (20-30 хв).",
         howTo: "10 хв пішки на північ від Times Square по 8th Ave.",
         gmaps: gm("M Social Hotel Times Square Beast and Butterflies rooftop")
       },
       {
+        name: "Duomo51 (вечеря — зустріч)",
+        coords: [40.7607, -73.9797],
+        desc: "Італійський ресторан на 7-му поверсі готелю Doubletree, з видом на Rockefeller Center та Мідтаун — місце вашої вечері-зустрічі у вівторок. Завершальна точка дня.",
+        howTo: "12 хв пішки на схід від M Social по 51st St (25 W 51st St, 7th Floor).",
+        gmaps: gm("Duomo51 25 W 51st St New York")
+      },
+      {
         name: HOTEL.name + " (повернення)",
         coords: HOTEL.coords,
-        desc: "Повернення в готель.",
-        howTo: "Пішки 3 хв до станції 50 St (лінії C/E), їхати одну зупинку до 42 St-Port Authority Bus Terminal, перейти на шатл S до Grand Central-42 St. Загалом ~20 хв. Або просто пішки 25 хв по 42nd St.",
+        desc: "Повернення в готель після вечері.",
+        howTo: "Пішки 3 хв до станції 5 Ave/53 St (лінія 6), їхати до Grand Central-42 St (2 зупинки). Загалом ~15 хв. Або пішки 20 хв по Madison/Park Ave.",
         gmaps: HOTEL.gmaps
       }
     ]
