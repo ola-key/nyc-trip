@@ -5,7 +5,7 @@
 
 ## 🔗 Живий сайт (GitHub Pages)
 
-**https://olhakliuchka-hash.github.io/nyc-trip/**
+**https://ola-key.github.io/nyc-trip/**
 
 ## Що всередині
 
