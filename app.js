@@ -2,10 +2,12 @@
 // маршруту, які трапляються в SVG-рендерері Leaflet при дуже глибокому зумі.
 const map = L.map('map', { zoomControl: true, renderer: L.canvas(), maxZoom: 19 }).setView([40.745, -73.985], 13);
 
-L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+// CARTO почав вимагати API-ключ для растрових тайлів (з'явився напис
+// "api key required"). Esri World Street Map — безкоштовний, без ключа,
+// без обмежень по referrer (працює і з file://, і з https).
+L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
   maxZoom: 19,
-  subdomains: 'abcd',
-  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
+  attribution: 'Tiles &copy; Esri &mdash; Source: Esri, DeLorme, NAVTEQ'
 }).addTo(map);
 
 const dayLayers = {}; // id -> { polyline, markers: [], group }
@@ -94,8 +96,9 @@ function drawDay(day) {
     const marker = L.marker(p.coords, {
       icon: numberedIcon(i === 0 || i === day.places.length - 1 ? (i === 0 ? 'S' : 'F') : i, day.color)
     }).addTo(map);
+    // Клік по маркеру показує лише коротку картку (назва + Google Maps),
+    // а не весь детальний маршрут — щоб не закривати мапу на мобільному.
     marker.bindPopup(buildPlacePopup(p, i, day.places.length));
-    marker.on('click', () => selectDay(day.id));
     return marker;
   });
 
@@ -125,6 +128,7 @@ function selectDay(id) {
   renderDetailPanel(day);
   const bounds = L.latLngBounds(day.places.map(p => p.coords));
   map.fitBounds(bounds, { padding: [60, 60] });
+  closeSidebarMobile();
 }
 
 function showAllDays() {
@@ -134,7 +138,24 @@ function showAllDays() {
   closeDetailPanel();
   const allCoords = DAYS.flatMap(d => d.places.map(p => p.coords));
   map.fitBounds(L.latLngBounds(allCoords), { padding: [40, 40] });
+  closeSidebarMobile();
 }
+
+// На мобільному сайдбар — це висувна панель поверх мапи. Після вибору дня
+// ховаємо її, щоб мапа й деталі маршруту стали видимими.
+function closeSidebarMobile() {
+  if (window.matchMedia('(max-width: 700px)').matches) {
+    document.getElementById('sidebar').classList.remove('open');
+    document.getElementById('sidebar-backdrop').classList.remove('open');
+  }
+}
+
+function toggleSidebar() {
+  document.getElementById('sidebar').classList.toggle('open');
+  document.getElementById('sidebar-backdrop').classList.toggle('open');
+}
+document.getElementById('sidebar-toggle').addEventListener('click', toggleSidebar);
+document.getElementById('sidebar-backdrop').addEventListener('click', toggleSidebar);
 
 function buildSidebar() {
   const list = document.getElementById('day-list');
