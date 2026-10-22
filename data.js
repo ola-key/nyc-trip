@@ -15,6 +15,12 @@ function gm(query) {
   return "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(query);
 }
 
+// Лінк за точними координатами + назвою місця (для надійнішого попадання,
+// коли пошук за назвою може видати інший однойменний об'єкт).
+function gmc(lat, lon, label) {
+  return "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(label + " " + lat + "," + lon);
+}
+
 const DAYS = [
   {
     id: "day1",
@@ -41,10 +47,10 @@ const DAYS = [
       },
       {
         name: "Charging Bull",
-        coords: [40.7056, -74.0134],
-        desc: "Знаменита бронзова статуя бика — символ фінансового Волл-стріт.",
+        coords: [40.7055, -74.0134],
+        desc: "Знаменита бронзова статуя бика — символ фінансового Волл-стріт. Поруч парк Bowling Green.",
         howTo: "10 хв пішки на північ від Whitehall Terminal.",
-        gmaps: gm("Charging Bull Wall Street")
+        gmaps: gmc(40.7055, -74.0134, "Charging Bull")
       },
       {
         name: "9/11 Memorial & Museum",
