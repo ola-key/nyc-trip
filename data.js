@@ -118,6 +118,7 @@ const DAYS = [
     date: "15 вересня (вт)",
     title: "Midtown Icons + приховані перлини біля готелю",
     color: "#e6194B",
+    budget: "≈ $250 на день (3 особи)",
     places: [
       { name: HOTEL.name, coords: HOTEL.coords, desc: HOTEL.desc, howTo: "Старт маршруту.", gmaps: HOTEL.gmaps },
       {
@@ -139,7 +140,8 @@ const DAYS = [
         coords: [40.7524, -73.9774],
         desc: "Елегантний коктейль-бар всередині Grand Central, оформлений як кабінет фінансиста 1920-х. У барі формат відкритого чеку.",
         howTo: "З головного залу Grand Central Terminal повернись спиною до входу в Apple Store і йди до протилежних сходів (не тих, що ведуть до Apple Store). Піднімись по сходах і вийди на вулицю. Одразу за дверима поверни ліворуч — вхід у бар буде в тій самій будівлі, шукай двері з вивіскою. Далі йди за вказівниками (15 Vanderbilt Ave).",
-        gmaps: "https://maps.app.goo.gl/M5J8jLpkdBFmfQPdA"
+        gmaps: "https://maps.app.goo.gl/M5J8jLpkdBFmfQPdA",
+        cost: "$50"
       },
       {
         name: "New York Public Library",
@@ -188,7 +190,8 @@ const DAYS = [
         coords: [40.7607, -73.9797],
         desc: "Італійський ресторан на 7-му поверсі готелю Doubletree, з видом на Rockefeller Center та Мідтаун — місце вашої вечері-зустрічі у вівторок. Щоб сісти на терасі — бронюйте столик за 1-2 дні наперед.",
         howTo: "15-18 хв пішки на північ від готелю по 5th Ave/Madison Ave (25 W 51st St, 7-й поверх). Або метро: лінія 6 від Grand Central-42 St до 51 St (1 зупинка) + 5 хв пішки.",
-        gmaps: gm("Duomo51 25 W 51st St New York")
+        gmaps: gm("Duomo51 25 W 51st St New York"),
+        cost: "$150"
       },
       {
         name: HOTEL.name + " (повернення)",
