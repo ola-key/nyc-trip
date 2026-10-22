@@ -163,9 +163,9 @@ const DAYS = [
         gmaps: gm("St. Patrick's Cathedral New York")
       },
       {
-        name: "M Social Hotel rooftop (швидкий візит, 20-30 хв)",
+        name: "M Social Hotel rooftop",
         coords: [40.7645, -73.9847],
-        desc: "Дах-бар Beast & Butterflies з видом на Таймс-сквер — зайти лише подивитись краєвид, без розсідання (20-30 хв).",
+        desc: "Дах-бар Beast & Butterflies з видом на Таймс-сквер — тут варто зупинитись і відпочити: випити чай/каву або щось з'їсти, набратись сил перед вечором. Бронювання не обов'язкове.",
         howTo: "15-18 хв пішки на захід від St. Patrick's Cathedral по 52nd St (226 W 52nd St).",
         gmaps: "https://maps.app.goo.gl/Xxy5VvCLVggnRQUL7"
       },
@@ -187,7 +187,7 @@ const DAYS = [
         name: "Duomo51 (вечеря — зустріч)",
         coords: [40.7607, -73.9797],
         desc: "Італійський ресторан на 7-му поверсі готелю Doubletree, з видом на Rockefeller Center та Мідтаун — місце вашої вечері-зустрічі у вівторок. Щоб сісти на терасі — бронюйте столик за 1-2 дні наперед.",
-        howTo: "Згідно пункту 9: 15-18 хв пішки на північ від готелю по 5th Ave/Madison Ave (25 W 51st St, 7-й поверх). Або метро: лінія 6 від Grand Central-42 St до 51 St (1 зупинка) + 5 хв пішки.",
+        howTo: "15-18 хв пішки на північ від готелю по 5th Ave/Madison Ave (25 W 51st St, 7-й поверх). Або метро: лінія 6 від Grand Central-42 St до 51 St (1 зупинка) + 5 хв пішки.",
         gmaps: gm("Duomo51 25 W 51st St New York")
       },
       {
