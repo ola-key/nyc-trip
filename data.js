@@ -128,32 +128,25 @@ const DAYS = [
         gmaps: gm("Tudor City Bridge New York")
       },
       {
-        name: "Greenacre Park",
-        coords: [40.7574, -73.9666],
-        desc: "Крихітний кишеньковий парк зі штучним водоспадом — оазис тиші серед хмарочосів.",
-        howTo: "10 хв пішки на північ від Tudor City Bridge.",
-        gmaps: gm("Greenacre Park New York")
-      },
-      {
         name: "Grand Central Terminal",
         coords: [40.7527, -73.9772],
         desc: "Історичний вокзал 1913 року, Whispering Gallery, зоряна стеля головного залу.",
-        howTo: "15 хв пішки на захід від Greenacre Park.",
-        gmaps: gm("Grand Central Terminal, New York")
+        howTo: "15 хв пішки на захід від Tudor City Bridge по 42nd St до Grand Central Terminal (89 E 42nd St).",
+        gmaps: "https://maps.app.goo.gl/sJ42GQAJAXqNyurC8"
       },
       {
         name: "The Campbell (Campbell Bar)",
         coords: [40.7524, -73.9774],
-        desc: "Елегантний коктейль-бар всередині Grand Central, оформлений як кабінет фінансиста 1920-х.",
-        howTo: "Прямо всередині будівлі Grand Central.",
-        gmaps: gm("The Campbell Bar Grand Central")
+        desc: "Елегантний коктейль-бар всередині Grand Central, оформлений як кабінет фінансиста 1920-х. У барі формат відкритого чеку.",
+        howTo: "З головного залу Grand Central Terminal повернись спиною до входу в Apple Store і йди до протилежних сходів (не тих, що ведуть до Apple Store). Піднімись по сходах і вийди на вулицю. Одразу за дверима поверни ліворуч — вхід у бар буде в тій самій будівлі, шукай двері з вивіскою. Далі йди за вказівниками (15 Vanderbilt Ave).",
+        gmaps: "https://maps.app.goo.gl/M5J8jLpkdBFmfQPdA"
       },
       {
         name: "New York Public Library",
         coords: [40.7532, -73.9822],
-        desc: "Знаменита будівля з левами Patience і Fortitude, зал Rose Main Reading Room.",
-        howTo: "10 хв пішки на захід по 42nd St.",
-        gmaps: gm("New York Public Library Main Branch")
+        desc: "Знаменита будівля з левами Patience і Fortitude, зал Rose Main Reading Room. Stephen A. Schwarzman Building.",
+        howTo: "10 хв пішки на захід від The Campbell по 42nd St до бібліотеки (476 5th Ave).",
+        gmaps: gm("New York Public Library Stephen A. Schwarzman Building 476 5th Ave New York")
       },
       {
         name: "Bryant Park",
@@ -163,45 +156,38 @@ const DAYS = [
         gmaps: gm("Bryant Park, New York")
       },
       {
-        name: "Rockefeller Center",
-        coords: [40.7587, -73.9787],
-        desc: "Комплекс хмарочосів, Channel Gardens, оглядовий майданчик Top of the Rock.",
-        howTo: "10 хв пішки на північний схід від Bryant Park.",
-        gmaps: gm("Rockefeller Center New York")
-      },
-      {
         name: "St. Patrick's Cathedral",
         coords: [40.7585, -73.9759],
         desc: "Найбільший неоготичний католицький собор США.",
-        howTo: "5 хв пішки на схід від Rockefeller Center по Fifth Ave.",
+        howTo: "15 хв пішки на північний схід від Bryant Park по 5th Ave.",
         gmaps: gm("St. Patrick's Cathedral New York")
       },
       {
-        name: "The Plaza Hotel",
-        coords: [40.7644, -73.9744],
-        desc: "Легендарний готель на розі Central Park South і Fifth Ave — саме тут зупинявся Кевін у фільмі 'Один удома 2: Загублений у Нью-Йорку'. Розкішний вестибюль вартий короткого візиту.",
-        howTo: "15 хв пішки на північ по Fifth Ave від St. Patrick's Cathedral (прогулянка повз шопінг-вітрини).",
-        gmaps: gm("The Plaza Hotel New York")
+        name: "M Social Hotel rooftop (швидкий візит, 20-30 хв)",
+        coords: [40.7645, -73.9847],
+        desc: "Дах-бар Beast & Butterflies з видом на Таймс-сквер — зайти лише подивитись краєвид, без розсідання (20-30 хв).",
+        howTo: "15-18 хв пішки на захід від St. Patrick's Cathedral по 52nd St (226 W 52nd St).",
+        gmaps: "https://maps.app.goo.gl/Xxy5VvCLVggnRQUL7"
       },
       {
         name: "Times Square",
         coords: [40.7580, -73.9855],
         desc: "Найяскравіший перехрестя світу з рекламними екранами та театрами Бродвею.",
-        howTo: "20 хв пішки на південний захід від Plaza Hotel через Central Park South і 7th Ave.",
+        howTo: "10 хв пішки на південь від M Social по 7th Ave/Broadway.",
         gmaps: gm("Times Square, New York")
       },
       {
-        name: "M Social Hotel — Beast & Butterflies (rooftop, заскочити на 20-30 хв)",
-        coords: [40.7645, -73.9847],
-        desc: "Дах-бар з видом прямо на Times Square — зайти лише подивитись краєвид, без розсідання (20-30 хв).",
-        howTo: "10 хв пішки на північ від Times Square по 8th Ave.",
-        gmaps: gm("M Social Hotel Times Square Beast and Butterflies rooftop")
+        name: HOTEL.name + " (повернення — перевдягнутись на вечерю)",
+        coords: HOTEL.coords,
+        desc: "Повернення в готель, щоб перевдягнутися у стиль smart casual / елегант перед вечерею в Duomo51.",
+        howTo: "Пішки 15 хв на схід по 42nd St до готелю. Або метро: S Shuttle від Times Sq-42 St до Grand Central-42 St (2 хв їзди) + 5 хв пішки.",
+        gmaps: HOTEL.gmaps
       },
       {
         name: "Duomo51 (вечеря — зустріч)",
         coords: [40.7607, -73.9797],
-        desc: "Італійський ресторан на 7-му поверсі готелю Doubletree, з видом на Rockefeller Center та Мідтаун — місце вашої вечері-зустрічі у вівторок. Завершальна точка дня.",
-        howTo: "12 хв пішки на схід від M Social по 51st St (25 W 51st St, 7th Floor).",
+        desc: "Італійський ресторан на 7-му поверсі готелю Doubletree, з видом на Rockefeller Center та Мідтаун — місце вашої вечері-зустрічі у вівторок. Щоб сісти на терасі — бронюйте столик за 1-2 дні наперед.",
+        howTo: "Згідно пункту 9: 15-18 хв пішки на північ від готелю по 5th Ave/Madison Ave (25 W 51st St, 7-й поверх). Або метро: лінія 6 від Grand Central-42 St до 51 St (1 зупинка) + 5 хв пішки.",
         gmaps: gm("Duomo51 25 W 51st St New York")
       },
       {
