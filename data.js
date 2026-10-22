@@ -68,10 +68,10 @@ const DAYS = [
       },
       {
         name: "Dawn's 'Til Dusk (кава і перекус)",
-        coords: [40.7030, -73.9906],
+        coords: [40.70331, -73.99116],
         desc: "Затишна кав'ярня в DUMBO — смачна кава та легкий перекус після переходу мосту.",
         cost: "$45 (кава + перекус)",
-        howTo: "10 хв пішки після переходу мосту в Brooklyn (33 Main St, Brooklyn).",
+        howTo: "10 хв пішки після переходу мосту в Brooklyn (33 Main St, на розі з Water St).",
         gmaps: gm("Dawn's Til Dusk 33 Main Street Brooklyn")
       },
       {
@@ -83,9 +83,9 @@ const DAYS = [
       },
       {
         name: "Pebble Beach",
-        coords: [40.7039, -73.9892],
+        coords: [40.70477, -73.99216],
         desc: "Кам'яний пляж з класичним видом на Manhattan Bridge та скайлайн — улюблена фотолокація.",
-        howTo: "2 хв пішки на схід від Manhattan Bridge View, вздовж набережної Brooklyn Bridge Park (ділянка Main Street, 65 Plymouth St).",
+        howTo: "2 хв пішки на північний захід від Manhattan Bridge View, вздовж набережної Brooklyn Bridge Park (ділянка Main Street).",
         gmaps: gm("Pebble Beach 65 Plymouth Street Brooklyn")
       },
       {
@@ -97,10 +97,17 @@ const DAYS = [
         gmaps: gm("Cecconi's Dumbo 55 Water Street Brooklyn")
       },
       {
+        name: "Станція York St (лінія F)",
+        coords: [40.701529, -73.986783],
+        desc: "Вхід у метро на розі Jay St / York St — звідси починається дорога назад у готель.",
+        howTo: "Пішки 8-10 хв від Cecconi's DUMBO.",
+        gmaps: gm("York St subway station F train Brooklyn Jay Street")
+      },
+      {
         name: HOTEL.name + " (повернення)",
         coords: HOTEL.coords,
         desc: "Повернення в готель.",
-        howTo: "Пішки 8-10 хв до станції York St (лінія F, вхід на Jay St/York St). Їхати F у бік Мангеттена до 2 Ave, перейти на лінію 6 (напрямок Uptown/Pelham Bay Pk) до станції Grand Central-42 St. Загалом ~35-40 хв.",
+        howTo: "Їхати F у бік Мангеттена до 2 Ave, перейти на лінію 6 (напрямок Uptown/Pelham Bay Pk) до станції Grand Central-42 St. Загалом ~25-30 хв.",
         gmaps: HOTEL.gmaps
       }
     ]
