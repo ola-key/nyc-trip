@@ -21,6 +21,7 @@ const DAYS = [
     date: "14 вересня (пн)",
     title: "Lower Manhattan & DUMBO + безкоштовний паром",
     color: "#f58231",
+    budget: "≈ $200 на день (3 особи: ми + син 13р.)",
     places: [
       { name: HOTEL.name, coords: HOTEL.coords, desc: HOTEL.desc, howTo: "Старт маршруту.", gmaps: HOTEL.gmaps },
       {
@@ -66,18 +67,34 @@ const DAYS = [
         gmaps: gm("Brooklyn Bridge Pedestrian Walkway")
       },
       {
-        name: "DUMBO / Pebble Beach",
-        coords: [40.7023, -73.9962],
-        desc: "Кам'яний пляж з класичним видом на Manhattan Bridge та скайлайн — улюблена фотолокація.",
-        howTo: "10 хв пішки після переходу мосту в Brooklyn.",
-        gmaps: gm("Pebble Beach Brooklyn Bridge Park")
+        name: "Dawn's 'Til Dusk (кава і перекус)",
+        coords: [40.7030, -73.9906],
+        desc: "Затишна кав'ярня в DUMBO — смачна кава та легкий перекус після переходу мосту.",
+        cost: "$45 (кава + перекус)",
+        howTo: "10 хв пішки після переходу мосту в Brooklyn (33 Main St, Brooklyn).",
+        gmaps: gm("Dawn's Til Dusk 33 Main Street Brooklyn")
       },
       {
-        name: "Cecconi's DUMBO",
-        coords: [40.7031, -73.9905],
-        desc: "Італійський ресторан прямо під Manhattan Bridge, тераса з видом на воду та скайлайн Мангеттена — гарне місце для вечері з видом після Pebble Beach.",
-        howTo: "3-5 хв пішки від Pebble Beach вздовж набережної (55 Water St, Brooklyn).",
-        gmaps: gm("Cecconi's Dumbo Brooklyn")
+        name: "Dumbo Manhattan Bridge View",
+        coords: [40.7028, -73.9896],
+        desc: "Класичний вид на Manhattan Bridge з Washington Street — знаменитий кадр, відомий з кіно та Instagram.",
+        howTo: "5 хв пішки на північ від Dawn's 'Til Dusk, по Water St до Washington St.",
+        gmaps: gm("Manhattan Bridge View Washington Street Dumbo Brooklyn")
+      },
+      {
+        name: "Pebble Beach",
+        coords: [40.7039, -73.9892],
+        desc: "Кам'яний пляж з класичним видом на Manhattan Bridge та скайлайн — улюблена фотолокація.",
+        howTo: "2 хв пішки на схід від Manhattan Bridge View, вздовж набережної Brooklyn Bridge Park (ділянка Main Street, 65 Plymouth St).",
+        gmaps: gm("Pebble Beach 65 Plymouth Street Brooklyn")
+      },
+      {
+        name: "Cecconi's DUMBO (вечеря)",
+        coords: [40.7035, -73.9920],
+        desc: "Італійський ресторан прямо під Manhattan Bridge, тераса з видом на воду та скайлайн Мангеттена — вечеря з видом після Pebble Beach. Щоб сісти на терасі — бронюйте столик за кілька годин наперед.",
+        cost: "$130 (вечеря на 3 особи)",
+        howTo: "5-7 хв пішки від Pebble Beach вздовж набережної (55 Water St, Brooklyn, будівля Empire Stores).",
+        gmaps: gm("Cecconi's Dumbo 55 Water Street Brooklyn")
       },
       {
         name: HOTEL.name + " (повернення)",

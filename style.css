@@ -183,6 +183,17 @@ html, body {
   letter-spacing: 0.03em;
 }
 
+.nav-warning {
+  margin: 0 8px 10px;
+  padding: 10px 12px;
+  background: rgba(230, 25, 75, 0.12);
+  border: 1px solid rgba(230, 25, 75, 0.35);
+  border-radius: 8px;
+  color: #f3c7cf;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
 .place-card a.gmaps-link {
   display: inline-block;
   margin-top: 6px;

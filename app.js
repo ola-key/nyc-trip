@@ -59,6 +59,7 @@ function renderDetailPanel(day) {
       <div class="place-card">
         <h3>${numLabel}: ${p.name}</h3>
         <p><span class="label">Опис:</span> ${p.desc}</p>
+        ${p.cost ? `<p><span class="label">Вартість:</span> ${p.cost}</p>` : ''}
         <p><span class="label">Як дістатись:</span> ${p.howTo}</p>
         <a class="gmaps-link" href="${p.gmaps}" target="_blank" rel="noopener">Відкрити в Google Maps ↗</a>
       </div>
@@ -69,7 +70,7 @@ function renderDetailPanel(day) {
   panel.innerHTML = `
     <button class="close-btn" onclick="closeDetailPanel()">&times;</button>
     <h2>${day.title}</h2>
-    <div class="detail-date">${day.date} · ≈ ${(dayDistanceKm(day) * 1.3).toFixed(1)} км маршруту (пішки + метро)</div>
+    <div class="detail-date">${day.date} · ≈ ${(dayDistanceKm(day) * 1.3).toFixed(1)} км маршруту (пішки + метро)${day.budget ? ' · ' + day.budget : ''}</div>
     ${placesHtml}
   `;
   panel.classList.add('open');
