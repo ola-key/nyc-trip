@@ -14,8 +14,8 @@
 - 🏨 Старт і фініш кожного дня — готель **Hampton Inn Manhattan-Grand Central**. Сніданок не включений (в готелі).
 - 📍 Всі точки маршруту підписані номерами; клік на маркер/лінію/день у бічній панелі відкриває детальний опис місця: що це, як туди дістатись (пішки/метро зі станціями), лінк на Google Maps.
 - 📏 Орієнтовний кілометраж кожного дня (пішки + метро) — видно одразу в бічній панелі.
-- 🎬 Кіно-локації: The Plaza Hotel та Wollman Rink ("Один удома 2"), Washington Square Park, SoHo, Brooklyn Bridge та інші місця в дусі "Секс і Місто".
-- 🍽️ Особисті вподобання: Motek, Buvette, Russ & Daughters, Elizabeth Street Garden, Greenacre Park, Tudor City Bridge, The Campbell Bar, Peak/Hudson Yards VU.
+- 🎬 Кіно-локації: The Plaza Hotel та Wollman Rink ("Один удома 2"), Washington Square Park, SoHo, Brooklyn Bridge та інші місця в дусі "Секс і Місто" і "Friends".
+- 🍽️ Особисті вподобання: Motek, Buvette, Elizabeth Street Garden, Greenacre Park, Tudor City Bridge, The Campbell Bar, Peak/Hudson Yards VU, Duomo 51, Cecconi's, Rosetta, Magnolia Bakery, Ulysses, M Social.
 - ⛴️ Безкоштовний Staten Island Ferry — вид на Статую Свободи без квитка.
 
 ## Маршрути по днях
