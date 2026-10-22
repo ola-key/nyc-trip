@@ -68,7 +68,7 @@ const DAYS = [
       },
       {
         name: "Dawn's 'Til Dusk (кава і перекус)",
-        coords: [40.70338, -73.99189],
+        coords: [40.70342, -73.99035],
         desc: "Затишна кав'ярня в DUMBO — смачна кава та легкий перекус після переходу мосту.",
         cost: "$45 (кава + перекус)",
         howTo: "10 хв пішки після переходу мосту в Brooklyn, за Clock Tower Condominium (вхід з боку Main St).",
@@ -83,7 +83,7 @@ const DAYS = [
       },
       {
         name: "Pebble Beach",
-        coords: [40.70477, -73.99216],
+        coords: [40.70442, -73.99042],
         desc: "Кам'яний пляж з класичним видом на Manhattan Bridge та скайлайн — улюблена фотолокація.",
         howTo: "2 хв пішки на північний захід від Manhattan Bridge View, вздовж набережної Brooklyn Bridge Park (ділянка Main Street).",
         gmaps: gm("Pebble Beach 65 Plymouth Street Brooklyn")
