@@ -68,17 +68,17 @@ const DAYS = [
       },
       {
         name: "Dawn's 'Til Dusk (кава і перекус)",
-        coords: [40.70331, -73.99116],
+        coords: [40.70338, -73.99189],
         desc: "Затишна кав'ярня в DUMBO — смачна кава та легкий перекус після переходу мосту.",
         cost: "$45 (кава + перекус)",
-        howTo: "10 хв пішки після переходу мосту в Brooklyn (33 Main St, на розі з Water St).",
+        howTo: "10 хв пішки після переходу мосту в Brooklyn, за Clock Tower Condominium (вхід з боку Main St).",
         gmaps: gm("Dawn's Til Dusk 33 Main Street Brooklyn")
       },
       {
         name: "Dumbo Manhattan Bridge View",
-        coords: [40.7028, -73.9896],
+        coords: [40.70333, -73.98970],
         desc: "Класичний вид на Manhattan Bridge з Washington Street — знаменитий кадр, відомий з кіно та Instagram.",
-        howTo: "5 хв пішки на північ від Dawn's 'Til Dusk, по Water St до Washington St.",
+        howTo: "5 хв пішки на схід від Dawn's 'Til Dusk, до рогу Washington St і Water St.",
         gmaps: gm("Manhattan Bridge View Washington Street Dumbo Brooklyn")
       },
       {
