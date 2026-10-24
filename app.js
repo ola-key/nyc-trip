@@ -69,12 +69,42 @@ function renderDetailPanel(day) {
   }).join('');
 
   panel.innerHTML = `
-    <button class="close-btn" onclick="closeDetailPanel()">&times;</button>
-    <h2>${day.title}</h2>
-    <div class="detail-date">${day.date} · ≈ ${(dayDistanceKm(day) * 1.3).toFixed(1)} км маршруту (пішки + метро)${day.budget ? ' · ' + day.budget : ''}</div>
-    ${placesHtml}
+    <div class="detail-header">
+      <div class="drag-handle"></div>
+      <button class="close-btn" onclick="closeDetailPanel()">&times;</button>
+      <h2>${day.title}</h2>
+      <div class="detail-date">${day.date} · ≈ ${(dayDistanceKm(day) * 1.3).toFixed(1)} км маршруту (пішки + метро)${day.budget ? ' · ' + day.budget : ''}</div>
+    </div>
+    <div class="detail-body">${placesHtml}</div>
   `;
   panel.classList.add('open');
+  setupSwipeToClose(panel);
+}
+
+function setupSwipeToClose(panel) {
+  const header = panel.querySelector('.detail-header');
+  if (!header) return;
+  let startY = null;
+  let deltaY = 0;
+  header.addEventListener('touchstart', (e) => {
+    if (e.target.closest('.close-btn')) return;
+    startY = e.touches[0].clientY;
+    deltaY = 0;
+    panel.style.transition = 'none';
+  }, { passive: true });
+  header.addEventListener('touchmove', (e) => {
+    if (startY === null) return;
+    deltaY = e.touches[0].clientY - startY;
+    if (deltaY > 0) panel.style.transform = `translateY(${deltaY}px)`;
+  }, { passive: true });
+  header.addEventListener('touchend', () => {
+    if (startY === null) return;
+    panel.style.transition = '';
+    panel.style.transform = '';
+    if (deltaY > 70) closeDetailPanel();
+    startY = null;
+    deltaY = 0;
+  });
 }
 
 function closeDetailPanel() {
