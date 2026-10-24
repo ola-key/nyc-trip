@@ -359,22 +359,15 @@ const DAYS = [
   {
     id: "day5",
     date: "18 вересня (пт)",
-    title: "Гастрономічний день: Union Square, NoMad, West Village",
+    title: "Flatiron, West Village, Seaport & Hudson VU",
     color: "#42d4f4",
     places: [
       { name: HOTEL.name, coords: HOTEL.coords, desc: HOTEL.desc, howTo: "Старт маршруту, легкий день перед від'їздом.", gmaps: HOTEL.gmaps },
       {
-        name: "Union Square",
-        coords: [40.7359, -73.9911],
-        desc: "Площа з грінмаркетом (фермерський ринок у визначені дні).",
-        howTo: "Метро 4/6 від Grand Central до Union Square, ~10 хв.",
-        gmaps: gm("Union Square New York")
-      },
-      {
         name: "Flatiron Building",
         coords: [40.7411, -73.9897],
         desc: "Знаменита будівля-трикутник 1902 року.",
-        howTo: "5-7 хв пішки на північ від Union Square.",
+        howTo: "15-20 хв пішки від готелю по Madison Ave/Broadway до 5th Ave/23rd St, або метро 6 від Grand Central до 23 St (~10 хв) + 3 хв пішки.",
         gmaps: gm("Flatiron Building New York")
       },
       {
@@ -385,13 +378,58 @@ const DAYS = [
         gmaps: gm("Motek NoMad 125 5th Ave New York")
       },
       {
-        name: "Buvette (West Village)",
-        coords: [40.7326, -74.0027],
-        desc: "Затишний французький бістро-бар — круасани, вино, невеликі тарілки. (Якщо малось на увазі 'Buchette' — це, ймовірно, Buvette.)",
-        howTo: "Метро 6 до Bleecker St, далі 10 хв пішки, ~20 хв від Motek.",
-        gmaps: gm("Buvette 42 Grove Street New York")
+        name: "Carrie Bradshaw's Apartment",
+        coords: [40.7354, -74.0039],
+        desc: "Знаменитий браунстоун з серіалу 'Секс і місто' — тут жила Керрі Бредшоу. 66 Perry St, New York, NY 10014.",
+        howTo: "Метро: лінія 6 від 23 St до Bleecker St (~10 хв), далі 15-18 хв пішки на захід через Greenwich Village до Perry St. Або таксі ~15 хв.",
+        gmaps: "https://maps.app.goo.gl/VvxTxVZ91kLJynsY8"
       },
-      { name: HOTEL.name + " (повернення)", coords: HOTEL.coords, desc: "Повернення в готель, збори перед від'їздом.", howTo: "Метро 6 від Bleecker St до Grand Central-42 St, ~20 хв.", gmaps: HOTEL.gmaps }
+      {
+        name: "Friends Apartment Building",
+        coords: [40.7324, -74.0053],
+        desc: "Будинок із вступних кадрів серіалу 'Друзі' на розі Grove St/Bedford St. 90 Bedford St, New York, NY 10014.",
+        howTo: "5-7 хв пішки на південь від Carrie Bradshaw's Apartment.",
+        gmaps: "https://maps.app.goo.gl/z1DBVpPn6Bx3XzEZ9"
+      },
+      {
+        name: "Magnolia Bakery",
+        coords: [40.7359, -74.0049],
+        desc: "Легендарна пекарня з 'Секс і місто' — знамениті капкейки та чізкейк-банки. Чізкейк — $7, печиво — $2.30; часто є акція 'купи 2 чізкейки — третій у подарунок'. Ми витратили $15, дуже смачно. 401 Bleecker St, New York, NY 10014.",
+        howTo: "3-5 хв пішки на схід по Bleecker St від Friends Apartment Building.",
+        gmaps: "https://maps.app.goo.gl/9gwk1abqfaqg3vQQ6",
+        cost: "$15 (на нас)"
+      },
+      {
+        name: "Ulysses'",
+        coords: [40.7045, -74.0100],
+        desc: "Ірландський паб у Financial District — затишна атмосфера, пиво, закуски.",
+        howTo: "Далеко від West Village (~5 км) — зручніше на метро: лінія 6 від Bleecker St до Wall St (~20 хв) + 5 хв пішки, або таксі/Uber ~20 хв.",
+        gmaps: "https://maps.app.goo.gl/fddTHvfrfYdQs1pd7",
+        cost: "≈ $75"
+      },
+      {
+        name: "Seaport District",
+        coords: [40.7070, -74.0040],
+        desc: "Історичний квартал біля гавані з мощеними вуличками, крамницями та ресторанами з видом на Brooklyn Bridge.",
+        howTo: "5-7 хв пішки на схід/північ від Ulysses' до Fulton St.",
+        gmaps: "https://maps.app.goo.gl/WAth3SiRhUtKR4TS6"
+      },
+      {
+        name: "Viewpoint of the Brooklyn Bridge",
+        coords: [40.7060, -74.0012],
+        desc: "Одна з найкращих оглядових точок на Brooklyn Bridge та Downtown Brooklyn з боку Manhattan.",
+        howTo: "3-5 хв пішки на північ від Seaport District.",
+        gmaps: "https://maps.app.goo.gl/hx6cMYmEBGY69Q3C7"
+      },
+      {
+        name: "Hudson VU",
+        coords: [40.7646, -73.9960],
+        desc: "Ресторан/бар з терасою на даху з видом на Hudson River — бронюйте вуличну (зовнішню) терасу заздалегідь. Бюджет ≈ $100 на двох. Вхід з 21 року. 653 11th Ave, New York, NY 10036.",
+        howTo: "Далеко (~8 км від Brooklyn Bridge) — зручніше на таксі/Uber (20-25 хв).",
+        gmaps: "https://maps.app.goo.gl/SKDQsaq8DYwMVmah7",
+        cost: "≈ $100 (на двох)"
+      },
+      { name: HOTEL.name + " (повернення)", coords: HOTEL.coords, desc: "Повернення в готель, збори перед від'їздом.", howTo: "15-20 хв на таксі/Uber на схід до готелю, або автобус M50 + метро S Shuttle до Grand Central.", gmaps: HOTEL.gmaps }
     ]
   }
 ];
