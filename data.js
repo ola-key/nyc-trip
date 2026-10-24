@@ -210,10 +210,17 @@ const DAYS = [
     places: [
       { name: HOTEL.name, coords: HOTEL.coords, desc: HOTEL.desc, howTo: "Старт маршруту.", gmaps: HOTEL.gmaps },
       {
+        name: "Black Fox Coffee",
+        coords: [40.7613, -73.9737],
+        desc: "Якісна смачна кава в атмосфері 'білих комірців'. Гарне місце для ранкової кави перед прогулянкою по Central Park.",
+        howTo: "15-20 хв пішки від готелю, або метро N/R/W до 5 Ave-59 St.",
+        gmaps: "https://maps.app.goo.gl/SHJUPzuK3jnsdNNV8"
+      },
+      {
         name: "The Plaza Hotel",
         coords: [40.7644, -73.9745],
         desc: "Легендарний готель-палац 1907 року на розі Central Park — відомий за фільмами 'Один удома 2' та 'Великий Гетсбі'. Зовнішній вигляд і холл варті короткого візиту.",
-        howTo: "15-20 хв пішки від готелю через Madison Ave/5th Ave, або метро N/R/W до станції 5 Ave-59 St (вихід одразу біля готелю).",
+        howTo: "3-5 хв пішки на північ від Black Fox Coffee.",
         gmaps: gm("The Plaza Hotel New York")
       },
       {
