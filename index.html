@@ -6,20 +6,23 @@
 <title>Нью-Йорк: маршрут 14–18 вересня</title>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
   integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-<link rel="stylesheet" href="style.css?v=20261024e" />
+<link rel="stylesheet" href="style.css?v=20261025" />
 </head>
 <body>
 <div id="app">
   <button id="sidebar-toggle" aria-label="Меню днів">☰</button>
   <div id="sidebar-backdrop"></div>
   <div id="sidebar">
-    <h1>Нью-Йорк 🗽</h1>
-    <div class="subtitle">
+    <div class="sidebar-header-row">
+      <h1 id="page-title">Нью-Йорк 🗽</h1>
+      <button id="lang-toggle" aria-label="Switch language / Змінити мову">EN</button>
+    </div>
+    <div class="subtitle" id="subtitle">
       14–18 вересня · Старт і фініш кожного дня — готель Hampton Inn Manhattan-Grand Central.<br/>
       Сніданок в готелі (не включений в маршрут). Клікніть на день або на лінію маршруту на карті.
     </div>
     <button id="toggle-all">Показати всі дні</button>
-    <div class="nav-warning">
+    <div class="nav-warning" id="nav-warning">
       ⚠️ У Нью-Йорку навігація на мапах (GPS/інтернет) часто працює нестабільно через щільну забудову — це нормальне явище для міста, не привід панікувати. Закладайте трохи більше часу на орієнтування та не поспішайте.
     </div>
     <ul id="day-list"></ul>
@@ -30,7 +33,8 @@
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
   integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-<script src="data.js?v=20261024e"></script>
-<script src="app.js?v=20261024e"></script>
+<script src="data.js?v=20261025"></script>
+<script src="i18n.js?v=20261025"></script>
+<script src="app.js?v=20261025"></script>
 </body>
 </html>

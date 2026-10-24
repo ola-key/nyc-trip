@@ -37,8 +37,36 @@ html, body {
 
 #sidebar h1 {
   font-size: 18px;
-  padding: 16px 16px 4px;
   margin: 0;
+}
+
+.sidebar-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 16px 16px 4px;
+}
+
+.sidebar-header-row h1 {
+  flex: 1;
+}
+
+#lang-toggle {
+  flex-shrink: 0;
+  background: var(--panel-2);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 5px 10px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+#lang-toggle:hover {
+  background: var(--accent);
+  border-color: var(--accent);
 }
 
 #sidebar .subtitle {

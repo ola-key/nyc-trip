@@ -13,6 +13,33 @@ L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_M
 const dayLayers = {}; // id -> { polyline, markers: [], group }
 let activeDayId = null;
 
+// --- Локалізація ---
+let currentLang = localStorage.getItem('lang') || 'uk';
+
+function t(key) {
+  return UI[currentLang][key];
+}
+
+// Повертає день (назва дня, дата, бюджет, точки) з накладеним перекладом,
+// якщо currentLang === 'en'. Для будь-якого поля, якого немає в перекладі,
+// береться оригінал (українська) — захист від часткового перекладу.
+function localizeDay(day) {
+  if (currentLang === 'uk') return day;
+  const tr = TRANSLATIONS_EN[day.id];
+  if (!tr) return day;
+  return {
+    ...day,
+    title: tr.title || day.title,
+    date: tr.date || day.date,
+    budget: tr.budget || day.budget,
+    places: day.places.map((p, i) => {
+      const pt = tr.places && tr.places[i];
+      if (!pt) return p;
+      return { ...p, ...pt };
+    })
+  };
+}
+
 // Формула гаверсинуса — відстань між двома точками (км)
 function haversineKm(a, b) {
   const R = 6371;
@@ -34,10 +61,10 @@ function dayDistanceKm(day) {
 }
 
 function buildPlacePopup(place, index, total) {
-  const numLabel = index === 0 ? 'Старт' : (index === total - 1 ? 'Фініш' : `#${index}`);
+  const numLabel = index === 0 ? t('start') : (index === total - 1 ? t('finish') : `#${index}`);
   return `<div style="min-width:180px">
     <strong>${numLabel}. ${place.name}</strong><br/>
-    <a href="${place.gmaps}" target="_blank" rel="noopener">Відкрити в Google Maps ↗</a>
+    <a href="${place.gmaps}" target="_blank" rel="noopener">${t('gmapsLink')}</a>
   </div>`;
 }
 
@@ -50,19 +77,20 @@ function numberedIcon(n, color) {
   });
 }
 
-function renderDetailPanel(day) {
+function renderDetailPanel(dayRaw) {
+  const day = localizeDay(dayRaw);
   const panel = document.getElementById('detail-panel');
   const placesHtml = day.places.map((p, i) => {
-    const numLabel = i === 0 ? 'Старт' : (i === day.places.length - 1 ? 'Фініш' : `Зупинка ${i}`);
+    const numLabel = i === 0 ? t('start') : (i === day.places.length - 1 ? t('finish') : `${t('stop')} ${i}`);
     const arrow = i < day.places.length - 1 ? '<div class="route-arrow">↓</div>' : '';
     return `
       <div class="place-card">
         <h3>${numLabel}: ${p.name}</h3>
-        <p><span class="label">Опис:</span> ${p.desc}</p>
-        ${p.cost ? `<p><span class="label">Вартість:</span> ${p.cost}</p>` : ''}
-        <p><span class="label">Як дістатись:</span> ${p.howTo}</p>
-        <a class="gmaps-link" href="${p.gmaps}" target="_blank" rel="noopener">Відкрити в Google Maps ↗</a>
-        ${p.ticketLink ? `<a class="gmaps-link" href="${p.ticketLink}" target="_blank" rel="noopener">Квитки на виставу ↗</a>` : ''}
+        <p><span class="label">${t('desc')}</span> ${p.desc}</p>
+        ${p.cost ? `<p><span class="label">${t('cost')}</span> ${p.cost}</p>` : ''}
+        <p><span class="label">${t('howTo')}</span> ${p.howTo}</p>
+        <a class="gmaps-link" href="${p.gmaps}" target="_blank" rel="noopener">${t('gmapsLink')}</a>
+        ${p.ticketLink ? `<a class="gmaps-link" href="${p.ticketLink}" target="_blank" rel="noopener">${t('ticketLink')}</a>` : ''}
       </div>
       ${arrow}
     `;
@@ -73,7 +101,7 @@ function renderDetailPanel(day) {
       <div class="drag-handle"></div>
       <button class="close-btn" onclick="closeDetailPanel()">&times;</button>
       <h2>${day.title}</h2>
-      <div class="detail-date">${day.date} · ≈ ${(dayDistanceKm(day) * 1.3).toFixed(1)} км маршруту (пішки + метро)${day.budget ? ' · ' + day.budget : ''}</div>
+      <div class="detail-date">${day.date} · ≈ ${(dayDistanceKm(day) * 1.3).toFixed(1)} ${t('routeDistance')}${day.budget ? ' · ' + day.budget : ''}</div>
     </div>
     <div class="detail-body">${placesHtml}</div>
   `;
@@ -112,7 +140,8 @@ function closeDetailPanel() {
 }
 window.closeDetailPanel = closeDetailPanel;
 
-function drawDay(day) {
+function drawDay(dayRaw) {
+  const day = localizeDay(dayRaw);
   const latlngs = day.places.map(p => p.coords);
   const polyline = L.polyline(latlngs, {
     color: day.color,
@@ -191,23 +220,27 @@ document.getElementById('sidebar-backdrop').addEventListener('click', toggleSide
 
 function buildSidebar() {
   const list = document.getElementById('day-list');
-  DAYS.forEach(day => {
+  list.innerHTML = '';
+  DAYS.forEach(dayRaw => {
+    const day = localizeDay(dayRaw);
     const li = document.createElement('li');
     const btn = document.createElement('button');
     btn.className = 'day-btn';
     btn.dataset.dayId = day.id;
     btn.style.borderLeftColor = day.color;
+    if (day.id === activeDayId) btn.classList.add('active');
     const straightKm = dayDistanceKm(day);
     const walkKm = (straightKm * 1.3).toFixed(1); // поправка на реальні вулиці (не по прямій)
-    btn.innerHTML = `<span class="day-date">${day.date}</span><span class="day-title">${day.title}</span><span class="day-distance">≈ ${walkKm} км маршруту (пішки + метро)</span>`;
+    btn.innerHTML = `<span class="day-date">${day.date}</span><span class="day-title">${day.title}</span><span class="day-distance">≈ ${walkKm} ${t('routeDistance')}</span>`;
     btn.addEventListener('click', () => selectDay(day.id));
     li.appendChild(btn);
     list.appendChild(li);
   });
-  document.getElementById('toggle-all').addEventListener('click', showAllDays);
 }
+document.getElementById('toggle-all').addEventListener('click', showAllDays);
 
 // Готель — окремий маркер, завжди видимий
+let hotelMarker = null;
 function drawHotelMarker() {
   const hotelIcon = L.divIcon({
     className: '',
@@ -215,12 +248,47 @@ function drawHotelMarker() {
     iconSize: [26, 26],
     iconAnchor: [13, 13]
   });
-  L.marker(HOTEL.coords, { icon: hotelIcon, zIndexOffset: 1000 })
+  hotelMarker = L.marker(HOTEL.coords, { icon: hotelIcon, zIndexOffset: 1000 })
     .addTo(map)
-    .bindPopup(`<strong>${HOTEL.name}</strong><br/><a href="${HOTEL.gmaps}" target="_blank" rel="noopener">Відкрити в Google Maps ↗</a>`);
+    .bindPopup(`<strong>${HOTEL.name}</strong><br/><a href="${HOTEL.gmaps}" target="_blank" rel="noopener">${t('gmapsLink')}</a>`);
 }
 
-buildSidebar();
-DAYS.forEach(drawDay);
-drawHotelMarker();
+// Оновлює всі статичні тексти інтерфейсу та перемальовує шари карти
+// відповідно до поточної мови (currentLang).
+function applyLanguage() {
+  document.documentElement.lang = currentLang;
+  document.getElementById('page-title').textContent = t('pageTitle');
+  document.getElementById('subtitle').innerHTML = t('subtitle');
+  document.getElementById('toggle-all').textContent = t('toggleAll');
+  document.getElementById('nav-warning').textContent = t('navWarning');
+  document.getElementById('lang-toggle').textContent = t('langButton');
+
+  buildSidebar();
+
+  Object.values(dayLayers).forEach(layer => {
+    layer.polyline.remove();
+    layer.markers.forEach(m => m.remove());
+  });
+  for (const key in dayLayers) delete dayLayers[key];
+  DAYS.forEach(drawDay);
+  if (hotelMarker) hotelMarker.remove();
+  drawHotelMarker();
+
+  if (activeDayId) {
+    DAYS.forEach(d => setDayVisible(d.id, d.id === activeDayId));
+    const day = DAYS.find(d => d.id === activeDayId);
+    renderDetailPanel(day);
+  } else {
+    DAYS.forEach(d => setDayVisible(d.id, true));
+  }
+}
+
+function toggleLanguage() {
+  currentLang = currentLang === 'uk' ? 'en' : 'uk';
+  localStorage.setItem('lang', currentLang);
+  applyLanguage();
+}
+document.getElementById('lang-toggle').addEventListener('click', toggleLanguage);
+
+applyLanguage();
 showAllDays();
