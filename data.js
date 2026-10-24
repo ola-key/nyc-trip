@@ -207,6 +207,7 @@ const DAYS = [
     date: "16 вересня (ср)",
     title: "Central Park & Museums",
     color: "#3cb44b",
+    budget: "≈ $150 на день",
     places: [
       { name: HOTEL.name, coords: HOTEL.coords, desc: HOTEL.desc, howTo: "Старт маршруту.", gmaps: HOTEL.gmaps },
       {
@@ -254,9 +255,10 @@ const DAYS = [
       {
         name: "The Metropolitan Museum of Art (Met)",
         coords: [40.7794, -73.9632],
-        desc: "Один з найбільших художніх музеїв світу. Плануйте 2-3 години.",
+        desc: "Один з найбільших художніх музеїв світу. Плануйте 2-3 години. Вхід ≈ $30 за особу.",
         howTo: "20-25 хв пішки через парк на схід (повз Ramble та Loeb Boathouse) до 5th Ave/82nd St.",
-        gmaps: "https://maps.app.goo.gl/ionKCLUnv1ChMjzQA"
+        gmaps: "https://maps.app.goo.gl/ionKCLUnv1ChMjzQA",
+        cost: "$30/особа"
       },
       {
         name: "Rosetta Bakery",
@@ -287,6 +289,7 @@ const DAYS = [
     date: "17 вересня (чт)",
     title: "Little Island, High Line & Hudson Yards",
     color: "#911eb4",
+    budget: "≈ $200 на день",
     places: [
       { name: HOTEL.name, coords: HOTEL.coords, desc: HOTEL.desc, howTo: "Старт маршруту.", gmaps: HOTEL.gmaps },
       {
@@ -348,10 +351,11 @@ const DAYS = [
       {
         name: "Бродвейський театр: Marquis Theatre",
         coords: [40.7592, -73.9847],
-        desc: "Вистава 'Stranger Things: The First Shadow' на Бродвеї. 210 W 46th St, New York, NY 10036.",
+        desc: "Вистава 'Stranger Things: The First Shadow' на Бродвеї. Квиток ≈ $86 за особу. 210 W 46th St, New York, NY 10036.",
         howTo: "Метро: лінія 7 від 34 St-Hudson Yards до Times Sq-42 St (кілька зупинок), далі 5 хв пішки до театру на 46th St. Загалом ~20 хв.",
         gmaps: gm("Marquis Theatre 210 W 46th St New York"),
-        ticketLink: "https://www.getyourguide.com/new-york-city-l59/nyc-stranger-things-the-first-shadow-on-broadway-t866006/?visitor-id=MX8OS1D0R8IVZ86EO4QDKL1K4POHHQKT&locale_autoredirect_optout=true"
+        ticketLink: "https://www.getyourguide.com/new-york-city-l59/nyc-stranger-things-the-first-shadow-on-broadway-t866006/?visitor-id=MX8OS1D0R8IVZ86EO4QDKL1K4POHHQKT&locale_autoredirect_optout=true",
+        cost: "$86/особа"
       },
       { name: HOTEL.name + " (повернення)", coords: HOTEL.coords, desc: "Повернення в готель після вистави.", howTo: "10-12 хв пішки на схід по 42nd St до готелю.", gmaps: HOTEL.gmaps }
     ]
@@ -361,6 +365,7 @@ const DAYS = [
     date: "18 вересня (пт)",
     title: "Flatiron, West Village, Seaport & Hudson VU",
     color: "#42d4f4",
+    budget: "≈ $240 на день",
     places: [
       { name: HOTEL.name, coords: HOTEL.coords, desc: HOTEL.desc, howTo: "Старт маршруту, легкий день перед від'їздом.", gmaps: HOTEL.gmaps },
       {
