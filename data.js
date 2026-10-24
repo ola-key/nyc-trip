@@ -210,55 +210,69 @@ const DAYS = [
     places: [
       { name: HOTEL.name, coords: HOTEL.coords, desc: HOTEL.desc, howTo: "Старт маршруту.", gmaps: HOTEL.gmaps },
       {
-        name: "Wollman Rink",
-        coords: [40.7679, -73.9734],
-        desc: "Каток біля південно-східного входу в парк — саме тут Кевін катався на ковзанах у фільмі 'Один удома 2'. Поруч, біля ставка (The Pond), знімали і сцену з 'жінкою-голубницею'.",
-        howTo: "Метро N/R/W до 5 Ave-59 St або 15-20 хв пішки від готелю через Central Park South.",
-        gmaps: gm("Wollman Rink Central Park")
+        name: "The Plaza Hotel",
+        coords: [40.7644, -73.9745],
+        desc: "Легендарний готель-палац 1907 року на розі Central Park — відомий за фільмами 'Один удома 2' та 'Великий Гетсбі'. Зовнішній вигляд і холл варті короткого візиту.",
+        howTo: "15-20 хв пішки від готелю через Madison Ave/5th Ave, або метро N/R/W до станції 5 Ave-59 St (вихід одразу біля готелю).",
+        gmaps: gm("The Plaza Hotel New York")
       },
       {
-        name: "The Metropolitan Museum of Art (Met)",
-        coords: [40.7794, -73.9632],
-        desc: "Один з найбільших художніх музеїв світу. Плануйте 2-3 години.",
-        howTo: "20-25 хв прогулянки через парк на північний схід (повз ставок і зоопарк) до 5th Ave/82nd St.",
-        gmaps: gm("The Metropolitan Museum of Art")
+        name: "The Pond at Central Park",
+        coords: [40.7656, -73.9735],
+        desc: "Мальовничий ставок біля південно-східного входу в парк — саме тут знімали сцени з 'Один удома 2'.",
+        howTo: "5 хв пішки в парк через вхід Grand Army Plaza (5th Ave/59th St), навпроти Plaza Hotel.",
+        gmaps: "https://maps.app.goo.gl/4wbJT6ztARwkPTAP9"
+      },
+      {
+        name: "Gapstow Bridge",
+        coords: [40.7665, -73.9737],
+        desc: "Кам'яний місток над ставком — один з найфотографованіших видів Central Park з хмарочосами на фоні.",
+        howTo: "2 хв пішки на північ від The Pond.",
+        gmaps: "https://maps.app.goo.gl/UQMx7MQZ8G7nF7Uw5"
       },
       {
         name: "Bethesda Terrace & Fountain",
         coords: [40.7735, -73.9702],
         desc: "Найвідоміша тераса парку з фонтаном 'Ангел вод'.",
-        howTo: "15 хв пішки на захід через парк від Met.",
-        gmaps: gm("Bethesda Terrace Central Park")
+        howTo: "15-18 хв пішки на північ через парк (повз Mall/Literary Walk) від Gapstow Bridge.",
+        gmaps: "https://maps.app.goo.gl/9vK5bHY1Q6kg8mu17"
       },
       {
         name: "Bow Bridge",
         coords: [40.7737, -73.9714],
         desc: "Витончений чавунний міст над озером — одна з найфотогеничніших локацій парку.",
         howTo: "5 хв пішки на захід від Bethesda Terrace.",
-        gmaps: gm("Bow Bridge Central Park")
+        gmaps: "https://maps.app.goo.gl/C6nV1zagnV4k2UtS7"
       },
       {
-        name: "Strawberry Fields",
-        coords: [40.7756, -73.9762],
-        desc: "Меморіал Джону Леннону з мозаїкою 'Imagine' навпроти Dakota Building.",
-        howTo: "6 хв пішки на північний захід від Bow Bridge.",
-        gmaps: gm("Strawberry Fields Central Park")
+        name: "The Metropolitan Museum of Art (Met)",
+        coords: [40.7794, -73.9632],
+        desc: "Один з найбільших художніх музеїв світу. Плануйте 2-3 години.",
+        howTo: "20-25 хв пішки через парк на схід (повз Ramble та Loeb Boathouse) до 5th Ave/82nd St.",
+        gmaps: "https://maps.app.goo.gl/ionKCLUnv1ChMjzQA"
       },
       {
-        name: "American Museum of Natural History",
-        coords: [40.7813, -73.9740],
-        desc: "Динозаври, планетарій Hayden, зали про космос і природу — улюблений музей для всієї родини.",
-        howTo: "7 хв пішки на захід та північ через парк.",
-        gmaps: gm("American Museum of Natural History")
+        name: "Rosetta Bakery",
+        coords: [40.7746, -73.9823],
+        desc: "Італійська пекарня-кафе на Upper West Side — круасани, кава, легкий перекус. 1928 Broadway, New York, NY 10023.",
+        howTo: "Від Met до Upper West Side далеко (~4 км через парк) — зручніше на таксі/Uber (15-20 хв через поперечну дорогу 86th St Transverse), або метро: лінія 4/5/6 від 86 St до 59 St, пересадка на лінію 1 до 66 St-Lincoln Center (~25-30 хв) + 5 хв пішки.",
+        gmaps: "https://maps.app.goo.gl/3ftP3EnxVozyq5Bw6"
       },
       {
         name: "Columbus Circle",
         coords: [40.7681, -73.9819],
         desc: "Кругла площа з монументом Колумбу, вхід до Time Warner Center із крамницями.",
-        howTo: "7 хв пішки на південь від музею.",
+        howTo: "5-7 хв пішки на південь по Broadway від Rosetta Bakery.",
         gmaps: gm("Columbus Circle New York")
       },
-      { name: HOTEL.name + " (повернення)", coords: HOTEL.coords, desc: "Повернення в готель.", howTo: "Пішки 5 хв до станції 59 St-Columbus Circle, сісти на лінію D (напрямок Downtown/Brooklyn) до станції 47-50 Sts-Rockefeller Center, перейти на шатл S до Grand Central-42 St. Загалом ~20-25 хв.", gmaps: HOTEL.gmaps }
+      {
+        name: "Times Square",
+        coords: [40.7580, -73.9855],
+        desc: "Яскраве серце Мідтауну з екранами та вогнями.",
+        howTo: "15-20 хв пішки на південний схід по Broadway від Columbus Circle, або метро: лінія A/C/B/D від 59 St-Columbus Circle до 42 St-Port Authority Bus Terminal (2 зупинки).",
+        gmaps: gm("Times Square New York")
+      },
+      { name: HOTEL.name + " (повернення)", coords: HOTEL.coords, desc: "Повернення в готель.", howTo: "15 хв пішки на схід по 42nd St до готелю, або метро: S Shuttle від Times Sq-42 St до Grand Central-42 St (2 хв їзди) + 5 хв пішки.", gmaps: HOTEL.gmaps }
     ]
   },
   {
