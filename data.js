@@ -25,10 +25,17 @@ const DAYS = [
     places: [
       { name: HOTEL.name, coords: HOTEL.coords, desc: HOTEL.desc, howTo: "Старт маршруту.", gmaps: HOTEL.gmaps },
       {
+        name: "Black Fox Coffee",
+        coords: [40.7046, -74.0074],
+        desc: "Якісна смачна кава в атмосфері фінансового району — офіси, костюми, стиль 'білих комірців'. Гарне місце для ранкової кави перед прогулянкою по Lower Manhattan.",
+        howTo: "Метро 4/5 від Grand Central-42 St до Wall St (~25 хв), далі 3 хв пішки (70 Pine St).",
+        gmaps: "https://maps.app.goo.gl/SHJUPzuK3jnsdNNV8"
+      },
+      {
         name: "Battery Park",
         coords: [40.7033, -74.0170],
         desc: "Парк на південному краю Мангеттена з видом на гавань, звідси ходить безкоштовний паром.",
-        howTo: "Метро 4/5 від Grand Central-42 St до Bowling Green (~25 хв), далі 5 хв пішки.",
+        howTo: "8-10 хв пішки на південний захід від Black Fox Coffee.",
         gmaps: gm("Battery Park New York")
       },
       {
