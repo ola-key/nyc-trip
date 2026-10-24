@@ -62,6 +62,7 @@ function renderDetailPanel(day) {
         ${p.cost ? `<p><span class="label">Вартість:</span> ${p.cost}</p>` : ''}
         <p><span class="label">Як дістатись:</span> ${p.howTo}</p>
         <a class="gmaps-link" href="${p.gmaps}" target="_blank" rel="noopener">Відкрити в Google Maps ↗</a>
+        ${p.ticketLink ? `<a class="gmaps-link" href="${p.ticketLink}" target="_blank" rel="noopener">Квитки на виставу ↗</a>` : ''}
       </div>
       ${arrow}
     `;

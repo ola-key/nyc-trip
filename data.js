@@ -285,81 +285,75 @@ const DAYS = [
   {
     id: "day4",
     date: "17 вересня (чт)",
-    title: "Village, SoHo, Chelsea & High Line",
+    title: "Little Island, High Line & Hudson Yards",
     color: "#911eb4",
     places: [
       { name: HOTEL.name, coords: HOTEL.coords, desc: HOTEL.desc, howTo: "Старт маршруту.", gmaps: HOTEL.gmaps },
       {
-        name: "Washington Square Park",
-        coords: [40.7308, -73.9973],
-        desc: "Серце Greenwich Village зі знаменитою аркою та студентською атмосферою NYU.",
-        howTo: "Метро 6 від Grand Central до Astor Place, далі 10 хв пішки, ~25 хв.",
-        gmaps: gm("Washington Square Park New York")
-      },
-      {
-        name: "SoHo streets",
-        coords: [40.7233, -74.0030],
-        desc: "Район з литими чавунними фасадами, дизайнерські бутіки та стрит-арт.",
-        howTo: "10-15 хв пішки на південь від Washington Square Park.",
-        gmaps: gm("SoHo Manhattan shopping district")
-      },
-      {
-        name: "Elizabeth Street Garden",
-        coords: [40.7226, -73.9958],
-        desc: "Прихований садок-скульптурний парк у Nolita — тиха зелена оаза серед місцевих скульптур.",
-        howTo: "7 хв пішки на схід від SoHo (Elizabeth St між Prince і Spring).",
-        gmaps: gm("Elizabeth Street Garden New York")
-      },
-      {
-        name: "Russ & Daughters",
-        coords: [40.7188, -73.9893],
-        desc: "Легендарна єврейська гастрономічна крамниця (1914 р.) — лосось, багелі з локсом, ікра. Чудове місце на ланч.",
-        howTo: "12-15 хв пішки на південний схід через Little Italy/Nolita (Orchard St, Lower East Side).",
-        gmaps: gm("Russ & Daughters Orchard Street")
-      },
-      {
-        name: "Chelsea Market",
-        coords: [40.7424, -74.0061],
-        desc: "Критий фуд-маркет у старій фабричній будівлі з десятками кав'ярень і крамниць.",
-        howTo: "Пішки 5 хв до станції Delancey St-Essex St, сісти на лінію F (напрямок Uptown/Queens), вийти на станції 14 St (6th Ave line), далі 5 хв пішки на захід по 15th St. Загалом ~20 хв.",
-        gmaps: gm("Chelsea Market New York")
-      },
-      {
-        name: "Fellini Coffee (Chelsea)",
-        coords: [40.7440, -74.0006],
-        desc: "Італійська кав'ярня з фірмовими лате (Tiramisu Latte, Dolce Vita Latte) — затишна перерва на каву. (Точну назву 'Fillini' не вдалось підтвердити, це Fellini Coffee — найближчий і найімовірніший відповідник, 231 8th Ave.)",
-        howTo: "10 хв пішки на схід від Chelsea Market по 16th-18th St до 8th Ave.",
-        gmaps: gm("Fellini Coffee 231 8th Ave New York")
-      },
-      {
-        name: "High Line",
-        coords: [40.7397, -74.0089],
-        desc: "Парк на колишній надземній залізниці з видами на Hudson River та вуличним мистецтвом.",
-        howTo: "10 хв пішки на південний захід від Fellini Coffee до входу на 14th St/Gansevoort St.",
-        gmaps: gm("High Line Park New York")
-      },
-      {
         name: "Little Island",
-        coords: [40.7412, -74.0138],
-        desc: "Незвичний плавучий парк-острів на палях у Гудзоні з амфітеатром і краєвидами на річку.",
-        howTo: "5 хв пішки з High Line на захід до Pier 55.",
-        gmaps: gm("Little Island Pier 55 New York")
+        coords: [40.7420024, -74.010299],
+        desc: "Незвичний плавучий парк-острів на палях у Гудзоні (Pier 55) з амфітеатром і краєвидами на річку.",
+        howTo: "Метро: S Shuttle до Times Sq-42 St, пересадка на лінію A/C/E до 14 St (8th Ave), далі 12-15 хв пішки на захід до Pier 55. Загалом ~35-40 хв. Або таксі/Uber ~20 хв.",
+        gmaps: "https://maps.app.goo.gl/DXL88htfj98PgaXB8"
       },
       {
-        name: "Hudson Yards / Vessel",
-        coords: [40.7538, -74.0022],
-        desc: "Сучасний квартал хмарочосів зі знаменитою стільниковою структурою Vessel.",
-        howTo: "15 хв пішки на північ по High Line до кінцевої зупинки на 34th St.",
-        gmaps: gm("Hudson Yards Vessel New York")
+        name: "The High Line / Boardwalk Terminus",
+        coords: [40.7398909, -74.0082172],
+        desc: "Південний кінець High Line — парку на колишній надземній залізниці з видами на Hudson River та вуличним мистецтвом.",
+        howTo: "5 хв пішки на північний схід від Little Island до входу на Gansevoort St.",
+        gmaps: "https://maps.app.goo.gl/Ueu1AkrskZAQ2dLH9"
       },
       {
-        name: "Peak / Hudson VU (вечеря для двох)",
-        coords: [40.7540, -74.0018],
-        desc: "Ресторан на 101-му поверсі 30 Hudson Yards з панорамним видом на весь Мангеттен — ідеальне романтичне місце для вечері на двох. Бронюйте столик заздалегідь.",
-        howTo: "Прямо в Hudson Yards, ліфт на 101-й поверх.",
-        gmaps: gm("Peak restaurant Hudson Yards New York")
+        name: "Northern Spur Preserve - High Line",
+        coords: [40.7435079, -74.0070884],
+        desc: "Дика природна ділянка High Line з густою рослинністю — контраст із рештою доглянутого парку.",
+        howTo: "8-10 хв пішки на північ по High Line.",
+        gmaps: "https://maps.app.goo.gl/5pAkQnJKveNqMrTi9"
       },
-      { name: HOTEL.name + " (повернення)", coords: HOTEL.coords, desc: "Повернення в готель.", howTo: "Метро 7 від 34 St-Hudson Yards до Grand Central-42 St, ~15 хв.", gmaps: HOTEL.gmaps }
+      {
+        name: "High Line Observation Deck",
+        coords: [40.743931, -74.0068848],
+        desc: "Оглядовий майданчик з лавками над 10th Ave — зручне місце перепочити і подивитись на вуличний рух знизу.",
+        howTo: "1-2 хв пішки, одразу поруч із Northern Spur Preserve.",
+        gmaps: "https://maps.app.goo.gl/enxC9m1VcZpH3jg56"
+      },
+      {
+        name: "High Line Interim Walkway",
+        coords: [40.7548149, -74.0059591],
+        desc: "Ділянка High Line зі збереженими старими рейками серед трав — один із найатмосферніших відрізків парку.",
+        howTo: "15-18 хв пішки на північ по High Line.",
+        gmaps: "https://maps.app.goo.gl/NK6yqJxHDmGctaB9A"
+      },
+      {
+        name: "High Line View Point",
+        coords: [40.7556312, -74.0055578],
+        desc: "Панорамна точка ближче до кінця High Line з видом на Hudson Yards.",
+        howTo: "2-3 хв пішки на північ від Interim Walkway.",
+        gmaps: "https://maps.app.goo.gl/1QjCYzved7S47CJt9"
+      },
+      {
+        name: "Vessel",
+        coords: [40.7538073, -74.0021537],
+        desc: "Знаменита стільникова структура-скульптура у центрі Hudson Yards.",
+        howTo: "8-10 хв пішки на схід від виходу з High Line (30th St) до Hudson Yards.",
+        gmaps: "https://maps.app.goo.gl/SoZWHT96a5VBLtZD7"
+      },
+      {
+        name: "Hudson Yards Public Square and Gardens",
+        coords: [40.7539248, -74.0033698],
+        desc: "Головна площа Hudson Yards навколо Vessel — сучасні сади, лавки, хмарочоси навколо.",
+        howTo: "1-2 хв пішки, одразу поруч із Vessel.",
+        gmaps: "https://maps.app.goo.gl/XKaAwAYbKESCud4J9"
+      },
+      {
+        name: "Бродвейський театр: Marquis Theatre",
+        coords: [40.7592, -73.9847],
+        desc: "Вистава 'Stranger Things: The First Shadow' на Бродвеї. 210 W 46th St, New York, NY 10036.",
+        howTo: "Метро: лінія 7 від 34 St-Hudson Yards до Times Sq-42 St (кілька зупинок), далі 5 хв пішки до театру на 46th St. Загалом ~20 хв.",
+        gmaps: gm("Marquis Theatre 210 W 46th St New York"),
+        ticketLink: "https://www.getyourguide.com/new-york-city-l59/nyc-stranger-things-the-first-shadow-on-broadway-t866006/?visitor-id=MX8OS1D0R8IVZ86EO4QDKL1K4POHHQKT&locale_autoredirect_optout=true"
+      },
+      { name: HOTEL.name + " (повернення)", coords: HOTEL.coords, desc: "Повернення в готель після вистави.", howTo: "10-12 хв пішки на схід по 42nd St до готелю.", gmaps: HOTEL.gmaps }
     ]
   },
   {
