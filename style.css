@@ -366,11 +366,11 @@ html, body {
     display: block;
   }
 
-  /* move Leaflet zoom control out from under the hamburger button */
+  /* move Leaflet zoom control to top-right, aligned with hamburger button */
   .leaflet-top.leaflet-left {
-    top: auto;
+    top: 12px;
     left: auto;
-    bottom: 90px;
-    right: 10px;
+    right: 12px;
+    bottom: auto;
   }
 }
