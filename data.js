@@ -371,11 +371,11 @@ const DAYS = [
         gmaps: gm("Flatiron Building New York")
       },
       {
-        name: "Motek (NoMad)",
-        coords: [40.7396, -73.9908],
-        desc: "Ізраїльське кафе — хумус, шакшука, свіжі салати. Гарне місце на ланч, є щасливі години з коктейлями/закусками по $5.",
+        name: "Motek Flatiron",
+        coords: [40.7401, -73.9893],
+        desc: "Ресторан середземноморської кухні — хумус, шакшука, свіжі салати. Гарне місце на ланч, є щасливі години з коктейлями/закусками по $5.",
         howTo: "3 хв пішки від Flatiron Building (125 5th Ave).",
-        gmaps: gm("Motek NoMad 125 5th Ave New York")
+        gmaps: "https://maps.app.goo.gl/LNjGUBfQaigErSHR9"
       },
       {
         name: "Carrie Bradshaw's Apartment",
