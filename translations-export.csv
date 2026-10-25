@@ -1,0 +1,218 @@
+Day,Item,Field,Ukrainian,English
+UI,-,pageTitle,Нью-Йорк 🗽,New York 🗽
+UI,-,subtitle,14–18 вересня · Старт і фініш кожного дня — готель Hampton Inn Manhattan-Grand Central.<br/>Сніданок в готелі (не включений в маршрут). Клікніть на день або на лінію маршруту на карті.,September 14–18 · Each day starts and ends at the Hampton Inn Manhattan-Grand Central hotel.<br/>Breakfast at the hotel (not included in the route). Click a day or the route line on the map.
+UI,-,toggleAll,Показати всі дні,Show all days
+UI,-,navWarning,"⚠️ У Нью-Йорку навігація на мапах (GPS/інтернет) часто працює нестабільно через щільну забудову — це нормальне явище для міста, не привід панікувати. Закладайте трохи більше часу на орієнтування та не поспішайте.","⚠️ In New York, map/GPS navigation is often unstable due to dense buildings — this is normal for the city, not a reason to panic. Allow a bit more time to get your bearings and don't rush."
+UI,-,start,Старт,Start
+UI,-,finish,Фініш,Finish
+UI,-,stop,Зупинка,Stop
+UI,-,desc,Опис:,Description:
+UI,-,cost,Вартість:,Cost:
+UI,-,howTo,Як дістатись:,How to get there:
+UI,-,gmapsLink,Відкрити в Google Maps ↗,Open in Google Maps ↗
+UI,-,ticketLink,Квитки на виставу ↗,Show tickets ↗
+UI,-,routeDistance,км маршруту (пішки + метро),km route (walking + subway)
+UI,-,langButton,EN,UA
+HOTEL,-,desc,"Готель на 39th St між Lexington та Park Ave, за 5 хв ходьби від Grand Central Terminal.","Hotel on 39th St between Lexington and Park Ave, a 5-minute walk from Grand Central Terminal."
+day1,-,title,Lower Manhattan & DUMBO + безкоштовний паром,Lower Manhattan & DUMBO + Free Ferry
+day1,-,date,14 вересня (пн),September 14 (Mon)
+day1,-,budget,≈ $200 на день (3 особи: ми + син 13р.),≈ $200/day (3 people: us + 13-y.o. son)
+day1,place 0,name,Hampton Inn Manhattan-Grand Central (старт/фініш),Hampton Inn Manhattan-Grand Central (старт/фініш)
+day1,place 0,desc,"Готель на 39th St між Lexington та Park Ave, за 5 хв ходьби від Grand Central Terminal.","Hotel on 39th St between Lexington and Park Ave, a 5-minute walk from Grand Central Terminal."
+day1,place 0,howTo,Старт маршруту.,Start of the route.
+day1,place 1,name,Battery Park,Battery Park
+day1,place 1,desc,"Парк на південному краю Мангеттена з видом на гавань, звідси ходить безкоштовний паром.",A park at the southern tip of Manhattan with harbor views — the free ferry departs from here.
+day1,place 1,howTo,"Метро 4/5 від Grand Central-42 St до Bowling Green (~25 хв), далі 5 хв пішки.","Subway 4/5 from Grand Central-42 St to Bowling Green (~25 min), then a 5-minute walk."
+day1,place 2,name,Staten Island Ferry (безкоштовно!),Staten Island Ferry (free!)
+day1,place 2,desc,"Безкоштовний паром курсує з Whitehall Terminal і дає чудовий вид на Статую Свободи та Ellis Island без квитка на офіційний круїз. Це не туристичний атракціон, а звичайний транспорт для жителів Staten Island — тому той самий паром назад не чекає. Дорога в один бік ~25 хв. Рада: щоб краще побачити Статую Свободи, на вході одразу виходьте на праву зовнішню палубу (по правому борту).","The free ferry departs from Whitehall Terminal and offers great views of the Statue of Liberty and Ellis Island without an official cruise ticket. This isn't a tourist attraction but regular public transit for Staten Island residents — the same ferry doesn't wait to take you back. One-way trip ~25 min. Tip: to get the best view of the Statue of Liberty, head straight to the right outer deck (starboard side) as soon as you board."
+day1,place 2,howTo,"5 хв пішки від Battery Park до Whitehall Terminal, паром ходить кожні 15-30 хв. На прибутті на Staten Island вийдіть з порома і перейдіть у тому ж терміналі на паром у зворотному напрямку — до Manhattan/Whitehall Terminal (ходить так само кожні 15-30 хв). Загалом дорога туди-назад ~50-60 хв разом з пересадкою.","A 5-minute walk from Battery Park to Whitehall Terminal; ferries run every 15-30 minutes. Upon arriving at Staten Island, disembark and go to the return ferry in the same terminal — back to Manhattan/Whitehall Terminal (also every 15-30 minutes). Round trip total ~50-60 minutes including the transfer."
+day1,place 2,cost,Безкоштовно,Free
+day1,place 3,name,Charging Bull,Charging Bull
+day1,place 3,desc,"Знаменита бронзова статуя бика — символ фінансового Волл-стріт. За традицією туристи труть деталі бика (роги, ніс, яйця) на удачу й гроші 😄. Поруч парк Bowling Green.","The famous bronze bull statue — symbol of Wall Street's financial district. Tradition has tourists rub the bull's details (horns, nose, testicles) for luck and money 😄. Bowling Green park is right next to it."
+day1,place 3,howTo,10 хв пішки на північ від Whitehall Terminal.,10-minute walk north from Whitehall Terminal.
+day1,place 4,name,9/11 Memorial & Museum,9/11 Memorial & Museum
+day1,place 4,desc,Меморіал на місці веж-близнюків з двома басейнами-водоспадами та іменами загиблих.,Memorial on the site of the Twin Towers with two reflecting pools and the names of the victims.
+day1,place 4,howTo,10 хв пішки на північ від Charging Bull.,10-minute walk north from Charging Bull.
+day1,place 5,name,Oculus,Oculus
+day1,place 5,desc,"Футуристична транспортна хаб-споруда та торговий центр Westfield World Trade Center, вражає архітектурою.",Futuristic transit-hub building and the Westfield World Trade Center mall — architecturally stunning.
+day1,place 5,howTo,2 хв пішки від 9/11 Memorial.,2-minute walk from the 9/11 Memorial.
+day1,place 6,name,Brooklyn Bridge (пішохідна доріжка),Brooklyn Bridge (pedestrian walkway)
+day1,place 6,desc,Знаменитий підвісний міст 1883 року з видом на Мангеттен і Іст-Рівер. Перехід ~30-40 хв пішки.,The famous 1883 suspension bridge with views of Manhattan and the East River. Crossing takes ~30-40 minutes on foot.
+day1,place 6,howTo,15 хв пішки на схід від Oculus до входу біля City Hall Park.,15-minute walk east from Oculus to the entrance near City Hall Park.
+day1,place 7,name,Dawn's 'Til Dusk (кава і перекус),Dawn's 'Til Dusk (coffee & snack)
+day1,place 7,desc,Затишна кав'ярня в DUMBO — смачна кава та легкий перекус після переходу мосту.,A cozy café in DUMBO — great coffee and a light bite after crossing the bridge.
+day1,place 7,howTo,"10 хв пішки після переходу мосту в Brooklyn, за Clock Tower Condominium (вхід з боку Main St).","10-minute walk after crossing the bridge into Brooklyn, behind the Clock Tower Condominium (entrance from Main St)."
+day1,place 7,cost,$45 (кава + перекус),$45 (coffee + snack)
+day1,place 8,name,Dumbo Manhattan Bridge View,Dumbo Manhattan Bridge View
+day1,place 8,desc,"Класичний вид на Manhattan Bridge з Washington Street — знаменитий кадр, відомий з кіно та Instagram.",The classic Manhattan Bridge view from Washington Street — a famous shot known from movies and Instagram.
+day1,place 8,howTo,"5 хв пішки на схід від Dawn's 'Til Dusk, до рогу Washington St і Water St.","5-minute walk east from Dawn's 'Til Dusk, to the corner of Washington St and Water St."
+day1,place 9,name,Pebble Beach,Pebble Beach
+day1,place 9,desc,Кам'яний пляж з класичним видом на Manhattan Bridge та скайлайн — улюблена фотолокація.,A pebble beach with a classic view of the Manhattan Bridge and skyline — a favorite photo spot.
+day1,place 9,howTo,"2 хв пішки на північний захід від Manhattan Bridge View, вздовж набережної Brooklyn Bridge Park (ділянка Main Street).","2-minute walk northwest from Manhattan Bridge View, along the Brooklyn Bridge Park waterfront (Main Street section)."
+day1,place 10,name,Cecconi's DUMBO (вечеря),Cecconi's DUMBO (dinner)
+day1,place 10,desc,"Італійський ресторан прямо під Manhattan Bridge, тераса з видом на воду та скайлайн Мангеттена — вечеря з видом після Pebble Beach. Щоб сісти на терасі — бронюйте столик за кілька годин наперед.","An Italian restaurant right under the Manhattan Bridge, with a terrace overlooking the water and the Manhattan skyline — dinner with a view after Pebble Beach. To get a terrace table, book a few hours ahead."
+day1,place 10,howTo,"5-7 хв пішки від Pebble Beach вздовж набережної (55 Water St, Brooklyn, будівля Empire Stores).","5-7 minute walk from Pebble Beach along the waterfront (55 Water St, Brooklyn, Empire Stores building)."
+day1,place 10,cost,$130 (вечеря на 3 особи),$130 (dinner for 3)
+day1,place 11,name,Станція York St (лінія F),York St Station (F train)
+day1,place 11,desc,Вхід у метро на розі Jay St / York St — звідси починається дорога назад у готель.,Subway entrance at the corner of Jay St / York St — the route back to the hotel starts here.
+day1,place 11,howTo,Пішки 8-10 хв від Cecconi's DUMBO.,8-10 minute walk from Cecconi's DUMBO.
+day1,place 12,name,Hampton Inn Manhattan-Grand Central (старт/фініш) (повернення),Hampton Inn Manhattan-Grand Central (старт/фініш) (повернення)
+day1,place 12,desc,Повернення в готель.,Return to the hotel.
+day1,place 12,howTo,"Їхати F у бік Мангеттена до 2 Ave, перейти на лінію 6 (напрямок Uptown/Pelham Bay Pk) до станції Grand Central-42 St. Загалом ~25-30 хв.","Take the F train toward Manhattan to 2 Ave, transfer to the 6 train (Uptown/Pelham Bay Pk direction) to Grand Central-42 St. Total ~25-30 min."
+day2,-,title,Midtown Icons + приховані перлини біля готелю,Midtown Icons + Hidden Gems Near the Hotel
+day2,-,date,15 вересня (вт),September 15 (Tue)
+day2,-,budget,≈ $250 на день (3 особи),≈ $250/day (3 people)
+day2,place 0,name,Hampton Inn Manhattan-Grand Central (старт/фініш),Hampton Inn Manhattan-Grand Central (старт/фініш)
+day2,place 0,desc,"Готель на 39th St між Lexington та Park Ave, за 5 хв ходьби від Grand Central Terminal.","Hotel on 39th St between Lexington and Park Ave, a 5-minute walk from Grand Central Terminal."
+day2,place 0,howTo,Старт маршруту.,Start of the route.
+day2,place 1,name,Tudor City Bridge,Tudor City Bridge
+day2,place 1,desc,"Мальовничий пішохідний міст над 42nd St з видом на будівлю ООН — тихе фото-місце, майже ніхто не знає.",A picturesque pedestrian bridge over 42nd St with a view of the UN building — a quiet photo spot almost nobody knows about.
+day2,place 1,howTo,3 хв пішки від готелю на схід по 42nd St.,3-minute walk east of the hotel along 42nd St.
+day2,place 2,name,Grand Central Terminal,Grand Central Terminal
+day2,place 2,desc,"Історичний вокзал 1913 року, Whispering Gallery, зоряна стеля головного залу.","Historic 1913 train station, the Whispering Gallery, the starry ceiling of the main concourse."
+day2,place 2,howTo,15 хв пішки на захід від Tudor City Bridge по 42nd St до Grand Central Terminal (89 E 42nd St).,15-minute walk west from Tudor City Bridge along 42nd St to Grand Central Terminal (89 E 42nd St).
+day2,place 3,name,The Campbell (Campbell Bar),The Campbell (Campbell Bar)
+day2,place 3,desc,"Елегантний коктейль-бар всередині Grand Central, оформлений як кабінет фінансиста 1920-х. У барі формат відкритого чеку.","An elegant cocktail bar inside Grand Central, styled as a 1920s financier's office. The bar runs an open-tab format."
+day2,place 3,howTo,"З головного залу Grand Central Terminal повернись спиною до входу в Apple Store і йди до протилежних сходів (не тих, що ведуть до Apple Store). Піднімись по сходах і вийди на вулицю. Одразу за дверима поверни ліворуч — вхід у бар буде в тій самій будівлі, шукай двері з вивіскою. Далі йди за вказівниками (15 Vanderbilt Ave).","From the main concourse of Grand Central Terminal, turn your back to the Apple Store entrance and head to the opposite staircase (not the one leading to the Apple Store). Go up the stairs and exit onto the street. Right outside the door, turn left — the bar entrance is in the same building, look for the door with the sign. Then follow the signs (15 Vanderbilt Ave)."
+day2,place 3,cost,$50,$50
+day2,place 4,name,New York Public Library,New York Public Library
+day2,place 4,desc,"Знаменита будівля з левами Patience і Fortitude, зал Rose Main Reading Room. Stephen A. Schwarzman Building.","The famous building with the Patience and Fortitude lions, the Rose Main Reading Room. Stephen A. Schwarzman Building."
+day2,place 4,howTo,10 хв пішки на захід від The Campbell по 42nd St до бібліотеки (476 5th Ave).,10-minute walk west from The Campbell along 42nd St to the library (476 5th Ave).
+day2,place 5,name,Bryant Park,Bryant Park
+day2,place 5,desc,Зелений парк за бібліотекою з кафе та літніми подіями.,A green park behind the library with cafés and summer events.
+day2,place 5,howTo,"Одразу за бібліотекою, 2 хв пішки.","Right behind the library, a 2-minute walk."
+day2,place 6,name,St. Patrick's Cathedral,St. Patrick's Cathedral
+day2,place 6,desc,Найбільший неоготичний католицький собор США.,The largest neo-Gothic Catholic cathedral in the US.
+day2,place 6,howTo,15 хв пішки на північний схід від Bryant Park по 5th Ave.,15-minute walk northeast from Bryant Park along 5th Ave.
+day2,place 7,name,M Social Hotel rooftop,M Social Hotel rooftop
+day2,place 7,desc,"Дах-бар Beast & Butterflies з видом на Таймс-сквер — тут варто зупинитись і відпочити: випити чай/каву або щось з'їсти, набратись сил перед вечором. Бронювання не обов'язкове.","The Beast & Butterflies rooftop bar with a view of Times Square — worth stopping here to rest: have tea/coffee or a bite, recharge before the evening. No reservation required."
+day2,place 7,howTo,15-18 хв пішки на захід від St. Patrick's Cathedral по 52nd St (226 W 52nd St).,15-18 minute walk west from St. Patrick's Cathedral along 52nd St (226 W 52nd St).
+day2,place 8,name,Times Square,Times Square
+day2,place 8,desc,Найяскравіший перехрестя світу з рекламними екранами та театрами Бродвею.,"The brightest crossroads in the world, with billboards and Broadway theaters."
+day2,place 8,howTo,10 хв пішки на південь від M Social по 7th Ave/Broadway.,10-minute walk south from M Social along 7th Ave/Broadway.
+day2,place 9,name,Hampton Inn Manhattan-Grand Central (старт/фініш) (повернення — перевдягнутись на вечерю),Hotel (return — change for dinner)
+day2,place 9,desc,"Повернення в готель, щоб перевдягнутися у стиль smart casual / елегант перед вечерею в Duomo51.",Return to the hotel to change into smart casual / elegant attire before dinner at Duomo51.
+day2,place 9,howTo,Пішки 15 хв на схід по 42nd St до готелю. Або метро: S Shuttle від Times Sq-42 St до Grand Central-42 St (2 хв їзди) + 5 хв пішки.,15-minute walk east along 42nd St to the hotel. Or subway: S Shuttle from Times Sq-42 St to Grand Central-42 St (2 min ride) + 5-minute walk.
+day2,place 10,name,Duomo51 (вечеря — зустріч),Duomo51 (dinner — reunion)
+day2,place 10,desc,"Італійський ресторан на 7-му поверсі готелю Doubletree, з видом на Rockefeller Center та Мідтаун — місце вашої вечері-зустрічі у вівторок. Щоб сісти на терасі — бронюйте столик за 1-2 дні наперед.","An Italian restaurant on the 7th floor of the Doubletree hotel, with views of Rockefeller Center and Midtown — the spot for your Tuesday dinner reunion. To sit on the terrace, book a table 1-2 days ahead."
+day2,place 10,howTo,"15-18 хв пішки на північ від готелю по 5th Ave/Madison Ave (25 W 51st St, 7-й поверх). Або метро: лінія 6 від Grand Central-42 St до 51 St (1 зупинка) + 5 хв пішки.","15-18 minute walk north from the hotel along 5th Ave/Madison Ave (25 W 51st St, 7th floor). Or subway: line 6 from Grand Central-42 St to 51 St (1 stop) + 5-minute walk."
+day2,place 10,cost,$150,$150
+day2,place 11,name,Hampton Inn Manhattan-Grand Central (старт/фініш) (повернення),Hampton Inn Manhattan-Grand Central (старт/фініш) (повернення)
+day2,place 11,desc,Повернення в готель після вечері.,Return to the hotel after dinner.
+day2,place 11,howTo,"Пішки 3 хв до станції 5 Ave/53 St (лінія 6), їхати до Grand Central-42 St (2 зупинки). Загалом ~15 хв. Або пішки 20 хв по Madison/Park Ave.","3-minute walk to 5 Ave/53 St station (line 6), ride to Grand Central-42 St (2 stops). ~15 min total. Or a 20-minute walk along Madison/Park Ave."
+day3,-,title,Central Park & Museums,Central Park & Museums
+day3,-,date,16 вересня (ср),September 16 (Wed)
+day3,-,budget,≈ $150 на день,≈ $150/day
+day3,place 0,name,Hampton Inn Manhattan-Grand Central (старт/фініш),Hampton Inn Manhattan-Grand Central (старт/фініш)
+day3,place 0,desc,"Готель на 39th St між Lexington та Park Ave, за 5 хв ходьби від Grand Central Terminal.","Hotel on 39th St between Lexington and Park Ave, a 5-minute walk from Grand Central Terminal."
+day3,place 0,howTo,Старт маршруту.,Start of the route.
+day3,place 1,name,Black Fox Coffee,Black Fox Coffee
+day3,place 1,desc,Якісна смачна кава в атмосфері 'білих комірців'. Гарне місце для ранкової кави перед прогулянкою по Central Park.,"Quality, delicious coffee with a 'white-collar' atmosphere. A great spot for morning coffee before a walk through Central Park."
+day3,place 1,howTo,"15-20 хв пішки від готелю, або метро N/R/W до 5 Ave-59 St.","15-20 minute walk from the hotel, or subway N/R/W to 5 Ave-59 St."
+day3,place 2,name,The Plaza Hotel,The Plaza Hotel
+day3,place 2,desc,Легендарний готель-палац 1907 року на розі Central Park — відомий за фільмами 'Один удома 2' та 'Великий Гетсбі'. Зовнішній вигляд і холл варті короткого візиту.,The legendary 1907 palace hotel on the corner of Central Park — famous from 'Home Alone 2' and 'The Great Gatsby'. The exterior and lobby are worth a quick visit.
+day3,place 2,howTo,3-5 хв пішки на північ від Black Fox Coffee.,3-5 minute walk north from Black Fox Coffee.
+day3,place 3,name,The Pond at Central Park,The Pond at Central Park
+day3,place 3,desc,Мальовничий ставок біля південно-східного входу в парк — саме тут знімали сцени з 'Один удома 2'.,A picturesque pond near the southeast entrance to the park — this is where scenes from 'Home Alone 2' were filmed.
+day3,place 3,howTo,"5 хв пішки в парк через вхід Grand Army Plaza (5th Ave/59th St), навпроти Plaza Hotel.","5-minute walk into the park through the Grand Army Plaza entrance (5th Ave/59th St), across from the Plaza Hotel."
+day3,place 4,name,Gapstow Bridge,Gapstow Bridge
+day3,place 4,desc,Кам'яний місток над ставком — один з найфотографованіших видів Central Park з хмарочосами на фоні.,"A stone bridge over the pond — one of the most photographed views in Central Park, with skyscrapers in the background."
+day3,place 4,howTo,2 хв пішки на північ від The Pond.,2-minute walk north from The Pond.
+day3,place 5,name,Bethesda Terrace & Fountain,Bethesda Terrace & Fountain
+day3,place 5,desc,Найвідоміша тераса парку з фонтаном 'Ангел вод'.,The park's most famous terrace with the 'Angel of the Waters' fountain.
+day3,place 5,howTo,15-18 хв пішки на північ через парк (повз Mall/Literary Walk) від Gapstow Bridge.,15-18 minute walk north through the park (past the Mall/Literary Walk) from Gapstow Bridge.
+day3,place 6,name,Bow Bridge,Bow Bridge
+day3,place 6,desc,Витончений чавунний міст над озером — одна з найфотогеничніших локацій парку.,An elegant cast-iron bridge over the lake — one of the most photogenic spots in the park.
+day3,place 6,howTo,5 хв пішки на захід від Bethesda Terrace.,5-minute walk west from Bethesda Terrace.
+day3,place 7,name,The Metropolitan Museum of Art (Met),The Metropolitan Museum of Art (Met)
+day3,place 7,desc,Один з найбільших художніх музеїв світу. Плануйте 2-3 години. Вхід ≈ $30 за особу.,One of the largest art museums in the world. Plan for 2-3 hours. Admission ≈ $30 per person.
+day3,place 7,howTo,20-25 хв пішки через парк на схід (повз Ramble та Loeb Boathouse) до 5th Ave/82nd St.,20-25 minute walk through the park east (past the Ramble and Loeb Boathouse) to 5th Ave/82nd St.
+day3,place 7,cost,$30/особа,$30/person
+day3,place 8,name,Rosetta Bakery,Rosetta Bakery
+day3,place 8,desc,"Італійська пекарня-кафе на Upper West Side — круасани, кава, легкий перекус. Недорога і якісна точка перекусу, де також доступна безкоштовна вода. 1928 Broadway, New York, NY 10023.","An Italian bakery-café on the Upper West Side — croissants, coffee, a light bite. An affordable, good-quality spot for a snack, with free water available too. 1928 Broadway, New York, NY 10023."
+day3,place 8,howTo,"~4 км пішки через парк (поперечна дорога 86th St Transverse) і далі симпатичним житловим районом Upper West Side — дорога приємна, багато зелені, різноманітна забудова, є на що подивитись. ~50-60 хв кроку.","~4 km on foot through the park (86th St Transverse) and then through the charming residential Upper West Side — a pleasant walk, lots of greenery, varied architecture, plenty to see. ~50-60 minutes of walking."
+day3,place 9,name,Columbus Circle,Columbus Circle
+day3,place 9,desc,"Кругла площа з монументом Колумбу, вхід до Time Warner Center із крамницями.","A round plaza with the Columbus monument, entrance to the Time Warner Center shops."
+day3,place 9,howTo,5-7 хв пішки на південь по Broadway від Rosetta Bakery.,5-7 minute walk south along Broadway from Rosetta Bakery.
+day3,place 10,name,Times Square,Times Square
+day3,place 10,desc,Яскраве серце Мідтауну з екранами та вогнями.,The vibrant heart of Midtown with screens and lights.
+day3,place 10,howTo,"15-20 хв пішки на південний схід по Broadway від Columbus Circle, або метро: лінія A/C/B/D від 59 St-Columbus Circle до 42 St-Port Authority Bus Terminal (2 зупинки).","15-20 minute walk southeast along Broadway from Columbus Circle, or subway: line A/C/B/D from 59 St-Columbus Circle to 42 St-Port Authority Bus Terminal (2 stops)."
+day3,place 11,name,Hampton Inn Manhattan-Grand Central (старт/фініш) (повернення),Hampton Inn Manhattan-Grand Central (старт/фініш) (повернення)
+day3,place 11,desc,Повернення в готель.,Return to the hotel.
+day3,place 11,howTo,"15 хв пішки на схід по 42nd St до готелю, або метро: S Shuttle від Times Sq-42 St до Grand Central-42 St (2 хв їзди) + 5 хв пішки.","15-minute walk east along 42nd St to the hotel, or subway: S Shuttle from Times Sq-42 St to Grand Central-42 St (2 min ride) + 5-minute walk."
+day4,-,title,"Little Island, High Line & Hudson Yards","Little Island, High Line & Hudson Yards"
+day4,-,date,17 вересня (чт),September 17 (Thu)
+day4,-,budget,≈ $200 на день,≈ $200/day
+day4,place 0,name,Hampton Inn Manhattan-Grand Central (старт/фініш),Hampton Inn Manhattan-Grand Central (старт/фініш)
+day4,place 0,desc,"Готель на 39th St між Lexington та Park Ave, за 5 хв ходьби від Grand Central Terminal.","Hotel on 39th St between Lexington and Park Ave, a 5-minute walk from Grand Central Terminal."
+day4,place 0,howTo,Старт маршруту.,Start of the route.
+day4,place 1,name,Little Island,Little Island
+day4,place 1,desc,Незвичний плавучий парк-острів на палях у Гудзоні (Pier 55) з амфітеатром і краєвидами на річку.,An unusual floating park-island on piles in the Hudson (Pier 55) with an amphitheater and river views.
+day4,place 1,howTo,"Метро: S Shuttle до Times Sq-42 St, пересадка на лінію A/C/E до 14 St (8th Ave), далі 12-15 хв пішки на захід до Pier 55. Загалом ~35-40 хв. Або таксі/Uber ~20 хв.","Subway: S Shuttle to Times Sq-42 St, transfer to line A/C/E to 14 St (8th Ave), then a 12-15 minute walk west to Pier 55. ~35-40 min total. Or taxi/Uber ~20 min."
+day4,place 2,name,The High Line / Boardwalk Terminus,The High Line / Boardwalk Terminus
+day4,place 2,desc,Південний кінець High Line — парку на колишній надземній залізниці з видами на Hudson River та вуличним мистецтвом.,The southern end of the High Line — a park on a former elevated railway with Hudson River views and street art.
+day4,place 2,howTo,5 хв пішки на північний схід від Little Island до входу на Gansevoort St.,5-minute walk northeast from Little Island to the entrance on Gansevoort St.
+day4,place 3,name,Northern Spur Preserve - High Line,Northern Spur Preserve - High Line
+day4,place 3,desc,"Один з найкрасивіших видів High Line: вузька вуличка між цегляними складами кольору теракоти, а над нею — старовинний підвісний пішохідний перехід між будівлями.","One of the most beautiful views on the High Line: a narrow street between terracotta-colored brick warehouses, with an old overhead pedestrian walkway bridging the buildings above."
+day4,place 3,howTo,8-10 хв пішки на північ по High Line.,8-10 minute walk north along the High Line.
+day4,place 4,name,High Line Observation Deck,High Line Observation Deck
+day4,place 4,desc,Оглядовий майданчик з лавками над 10th Ave — зручне місце перепочити і подивитись на вуличний рух знизу.,A viewing platform with benches over 10th Ave — a convenient spot to rest and watch the street traffic below.
+day4,place 4,howTo,"1-2 хв пішки, одразу поруч із Northern Spur Preserve.","1-2 minute walk, right next to Northern Spur Preserve."
+day4,place 5,name,High Line Interim Walkway,High Line Interim Walkway
+day4,place 5,desc,Ділянка High Line зі збереженими старими рейками серед трав — один із найатмосферніших відрізків парку.,A section of the High Line with preserved old rails amid the grasses — one of the most atmospheric stretches of the park.
+day4,place 5,howTo,15-18 хв пішки на північ по High Line.,15-18 minute walk north along the High Line.
+day4,place 6,name,High Line View Point,High Line View Point
+day4,place 6,desc,Панорамна точка ближче до кінця High Line з видом на Hudson Yards.,A panoramic spot near the end of the High Line with a view of Hudson Yards.
+day4,place 6,howTo,2-3 хв пішки на північ від Interim Walkway.,2-3 minute walk north from the Interim Walkway.
+day4,place 7,name,Vessel,Vessel
+day4,place 7,desc,Знаменита стільникова структура-скульптура у центрі Hudson Yards.,The famous honeycomb-structure sculpture at the center of Hudson Yards.
+day4,place 7,howTo,8-10 хв пішки на схід від виходу з High Line (30th St) до Hudson Yards.,8-10 minute walk east from the High Line exit (30th St) to Hudson Yards.
+day4,place 8,name,Hudson Yards Public Square and Gardens,Hudson Yards Public Square and Gardens
+day4,place 8,desc,"Головна площа Hudson Yards навколо Vessel — сучасні сади, лавки, хмарочоси навколо.","The main plaza of Hudson Yards around the Vessel — modern gardens, benches, skyscrapers all around."
+day4,place 8,howTo,"1-2 хв пішки, одразу поруч із Vessel.","1-2 minute walk, right next to the Vessel."
+day4,place 9,name,Бродвейський театр: Marquis Theatre,Broadway Theater: Marquis Theatre
+day4,place 9,desc,"Вистава 'Stranger Things: The First Shadow' на Бродвеї. Квиток ≈ $86 за особу. 210 W 46th St, New York, NY 10036.","'Stranger Things: The First Shadow' on Broadway. Ticket ≈ $86 per person. 210 W 46th St, New York, NY 10036."
+day4,place 9,howTo,"Метро: лінія 7 від 34 St-Hudson Yards до Times Sq-42 St (кілька зупинок), далі 5 хв пішки до театру на 46th St. Загалом ~20 хв.","Subway: line 7 from 34 St-Hudson Yards to Times Sq-42 St (a few stops), then a 5-minute walk to the theater on 46th St. ~20 min total."
+day4,place 9,cost,$86/особа,$86/person
+day4,place 10,name,Hampton Inn Manhattan-Grand Central (старт/фініш) (повернення),Hampton Inn Manhattan-Grand Central (старт/фініш) (повернення)
+day4,place 10,desc,Повернення в готель після вистави.,Return to the hotel after the show.
+day4,place 10,howTo,10-12 хв пішки на схід по 42nd St до готелю.,10-12 minute walk east along 42nd St to the hotel.
+day5,-,title,"Flatiron, West Village, Seaport & Hudson VU","Flatiron, West Village, Seaport & Hudson VU"
+day5,-,date,18 вересня (пт),September 18 (Fri)
+day5,-,budget,≈ $240 на день,≈ $240/day
+day5,place 0,name,Hampton Inn Manhattan-Grand Central (старт/фініш),Hampton Inn Manhattan-Grand Central (старт/фініш)
+day5,place 0,desc,"Готель на 39th St між Lexington та Park Ave, за 5 хв ходьби від Grand Central Terminal.","Hotel on 39th St between Lexington and Park Ave, a 5-minute walk from Grand Central Terminal."
+day5,place 0,howTo,"Старт маршруту, легкий день перед від'їздом.","Start of the route, a light day before departure."
+day5,place 1,name,Flatiron Building,Flatiron Building
+day5,place 1,desc,Знаменита будівля-трикутник 1902 року.,The famous triangular building from 1902.
+day5,place 1,howTo,"15-20 хв пішки від готелю по Madison Ave/Broadway до 5th Ave/23rd St, або метро 6 від Grand Central до 23 St (~10 хв) + 3 хв пішки.","15-20 minute walk from the hotel along Madison Ave/Broadway to 5th Ave/23rd St, or subway 6 from Grand Central to 23 St (~10 min) + 3-minute walk."
+day5,place 2,name,Motek Flatiron,Motek Flatiron
+day5,place 2,desc,"Ресторан середземноморської кухні — хумус, шакшука, свіжі салати. Гарне місце на ланч, є щасливі години з коктейлями/закусками по $5.","A Mediterranean restaurant — hummus, shakshuka, fresh salads. A great lunch spot, with happy hour cocktails/snacks for $5."
+day5,place 2,howTo,3 хв пішки від Flatiron Building (125 5th Ave).,3-minute walk from the Flatiron Building (125 5th Ave).
+day5,place 3,name,Carrie Bradshaw's Apartment,Carrie Bradshaw's Apartment
+day5,place 3,desc,"Знаменитий браунстоун з серіалу 'Секс і місто' — тут жила Керрі Бредшоу. 66 Perry St, New York, NY 10014.","The famous brownstone from 'Sex and the City' — this is where Carrie Bradshaw lived. 66 Perry St, New York, NY 10014."
+day5,place 3,howTo,"Метро: лінія 6 від 23 St до Bleecker St (~10 хв), далі 15-18 хв пішки на захід через Greenwich Village до Perry St. Або таксі ~15 хв.","Subway: line 6 from 23 St to Bleecker St (~10 min), then a 15-18 minute walk west through Greenwich Village to Perry St. Or taxi ~15 min."
+day5,place 4,name,Friends Apartment Building,Friends Apartment Building
+day5,place 4,desc,"Будинок із вступних кадрів серіалу 'Друзі' на розі Grove St/Bedford St. 90 Bedford St, New York, NY 10014.","The building from the opening credits of 'Friends', on the corner of Grove St/Bedford St. 90 Bedford St, New York, NY 10014."
+day5,place 4,howTo,5-7 хв пішки на південь від Carrie Bradshaw's Apartment.,5-7 minute walk south from Carrie Bradshaw's Apartment.
+day5,place 5,name,Magnolia Bakery,Magnolia Bakery
+day5,place 5,desc,"Легендарна пекарня з 'Секс і місто' — знамениті капкейки та чізкейк-банки. Чізкейк — $7, печиво — $2.30; часто є акція 'купи 2 чізкейки — третій у подарунок'. Ми витратили $15, дуже смачно. 401 Bleecker St, New York, NY 10014.","The legendary bakery from 'Sex and the City' — famous cupcakes and jarred cheesecakes. Cheesecake — $7, cookie — $2.30; there's often a 'buy 2 cheesecakes, get the 3rd free' deal. We spent $15, very tasty. 401 Bleecker St, New York, NY 10014."
+day5,place 5,howTo,3-5 хв пішки на схід по Bleecker St від Friends Apartment Building.,3-5 minute walk east along Bleecker St from the Friends Apartment Building.
+day5,place 5,cost,$15 (на нас),$15 (for us)
+day5,place 6,name,Ulysses',Ulysses'
+day5,place 6,desc,"Ірландський паб у Financial District — затишна атмосфера, пиво, закуски.","An Irish pub in the Financial District — cozy atmosphere, beer, snacks."
+day5,place 6,howTo,"Далеко від West Village (~5 км) — зручніше на метро: лінія 6 від Bleecker St до Wall St (~20 хв) + 5 хв пішки, або таксі/Uber ~20 хв.","Far from West Village (~5 km) — better by subway: line 6 from Bleecker St to Wall St (~20 min) + 5-minute walk, or taxi/Uber ~20 min."
+day5,place 6,cost,≈ $75,≈ $75
+day5,place 7,name,Seaport District,Seaport District
+day5,place 7,desc,"Історичний квартал біля гавані з мощеними вуличками, крамницями та ресторанами з видом на Brooklyn Bridge.","A historic waterfront neighborhood with cobblestone streets, shops, and restaurants overlooking the Brooklyn Bridge."
+day5,place 7,howTo,5-7 хв пішки на схід/північ від Ulysses' до Fulton St.,5-7 minute walk east/north from Ulysses' to Fulton St.
+day5,place 8,name,Viewpoint of the Brooklyn Bridge,Viewpoint of the Brooklyn Bridge
+day5,place 8,desc,Одна з найкращих оглядових точок на Brooklyn Bridge та Downtown Brooklyn з боку Manhattan.,One of the best viewpoints of the Brooklyn Bridge and Downtown Brooklyn from the Manhattan side.
+day5,place 8,howTo,3-5 хв пішки на північ від Seaport District.,3-5 minute walk north from Seaport District.
+day5,place 9,name,Hudson VU,Hudson VU
+day5,place 9,desc,"Ресторан/бар з терасою на даху з видом на Hudson River — бронюйте вуличну (зовнішню) терасу заздалегідь. Бюджет ≈ $100 на двох. Вхід з 21 року. 653 11th Ave, New York, NY 10036.","A restaurant/bar with a rooftop terrace overlooking the Hudson River — book the outdoor terrace in advance. Budget ≈ $100 for two. 21+ entry. 653 11th Ave, New York, NY 10036."
+day5,place 9,howTo,Далеко (~8 км від Brooklyn Bridge) — зручніше на таксі/Uber (20-25 хв).,Far (~8 km from Brooklyn Bridge) — better by taxi/Uber (20-25 min).
+day5,place 9,cost,≈ $100 (на двох),≈ $100 (for two)
+day5,place 10,name,Hampton Inn Manhattan-Grand Central (старт/фініш) (повернення),Hampton Inn Manhattan-Grand Central (старт/фініш) (повернення)
+day5,place 10,desc,"Повернення в готель, збори перед від'їздом.","Return to the hotel, pack before departure."
+day5,place 10,howTo,"15-20 хв на таксі/Uber на схід до готелю, або автобус M50 + метро S Shuttle до Grand Central.","15-20 min by taxi/Uber east to the hotel, or bus M50 + subway S Shuttle to Grand Central."
